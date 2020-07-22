@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Change Type Labeling Protocol</h1>
+<p>
+A software change is a modification of an existing functionality
+In a way it is the other side of a refactor, a change of the implementation with no change the functionality.
+Changes are of interest since they allow investigating the requirements maturity.
+</p>
+
+<ol>
+ <li>Adding new functionality is not a change</li>
+ <li>Refactoring is not a change</li>
+ <li>Corrective commit, bug fixes, are not a change. While one claim that the bug fix changes the functionality,
+  a bug is a deviation for the intended functionality in the first place</li>
+ <li> A modification that the user is not aware of (e.g., making a function inline) is not a change.
+  If an implementation method is part of the requirements and it is changed, this is a change (e.g., a massive data structure change)</li>
+ <li>Changing implementation without changing the functionality is not a change.
+  For example, changing variable type is not a change</li>
+ <li>Changing of documentation and other non-code entities are not a change</li>
+ <li>Code review derived changes are not changes. This is since most of them refer to implementation.
+  In case it is known that the code review comment refer to the functionality, it is a change.</li>
+
+</ol>
+
+
+</body>
+</html>

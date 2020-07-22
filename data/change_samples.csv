@@ -1,0 +1,1848 @@
+repo_name,commit,subject,message,is_corrective,is_adaptive,is_perfective,is_refactor,corrective,adaptive,perfective,refactor,change,comment,justification,batch
+geneweb/geneweb,d506b73fceb708393fcf4bb1e6ba66fe25d22856,-,"-
+
+",FALSE,FALSE,FALSE,FALSE,,,,,,uncertain,No text,random_batch_1
+backdrop-ops/backdrop-pantheon,3b32bb6fc2c6866244c274dac52d5c7b5a054339,"- Patch #146470 by Eaton: install.php was hard-calling the user module's internal FAPI functions, and that line had been missed.","- Patch #146470 by Eaton: install.php was hard-calling the user module's internal FAPI functions, and that line had been missed.
+",FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,random_batch_1
+JetBrains/intellij-community,a01fb830ce2bc4c9d69fb37b9b291334be178379,AbstractTreeBuilder - initRootNode is performed on tree showNotify,"AbstractTreeBuilder - initRootNode is performed on tree showNotify
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,uncertain,,random_batch_1
+apache/groovy,2187bee7ca7491e9e29751f1424d99bb89e5e117,"fix regression in swingbuilder.  default attributes weren't being applied to text where it maed sense, i.e. label(""text"") and friends were broken.","fix regression in swingbuilder.  default attributes weren't being applied to text where it maed sense, i.e. label(""text"") and friends were broken.
+
+git-svn-id: aa43ce4553b005588bb3cc6c16966320b011facb@6389 a5544e8c-8a19-0410-ba12-f9af4593a198
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,random_batch_1
+unioslo/cerebrum,2e85b2eec9affdfcfa16449467043f40919c0cdd,Corrected expetion name.,"Corrected expetion name.
+
+",TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,changed name,,random_batch_1
+pfsense/pfsense,dd50bba5c739b19e0c286728d5f5adc7d604e096,"Minor speed-up, config.cache has already been created in parse_config()","Minor speed-up, config.cache has already been created in parse_config()
+",FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,,,random_batch_1
+textpattern/textpattern,d6a4be7cc269e03150d18cef1b1b628552605592,add $thislink to <txp:linklist />,"add $thislink to <txp:linklist />
+
+git-svn-id: a8440ceda8ea1cbce8dd716a07505c8f7f8ce2dc@366 2fea6a4d-a838-0410-917b-93a53c48e9d2
+",FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+Taeung/tip,53c0b59dcdb7c68c3cfd4b9a0bd17373b785f2eb,[PATCH] uml: fix dynamic linking on some 64-bit distros,"[PATCH] uml: fix dynamic linking on some 64-bit distros
+
+With Paolo 'Blaisorblade' Giarrusso <25fbe3e5acbb7edd90bb5fdeec999a792321fbc4@yahoo.it>
+
+The current UML build assumes that on x86-64 systems, /lib is a symlink
+to /lib64, but in some distributions (like PLD and CentOS) they are
+separate directories, so the 64 bit library loader isn't found.  This
+patch inserts /lib64 at the start of the rpath on x86-64 UML builds.
+
+Signed-off-by: Rob Landley <7e09c9d3e96378bf549fc283fd6e1e5b7014cc33@landley.net>
+Signed-off-by: Paolo 'Blaisorblade' Giarrusso <25fbe3e5acbb7edd90bb5fdeec999a792321fbc4@yahoo.it>
+Signed-off-by: Linus Torvalds <69652caca27c8b940640ad396ab71f93cacec34f@osdl.org>
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,random_batch_1
+processone/ejabberd,4f48b839c40cd4123b801aa08c08d5d7a0ea34c9,,"
+* doc/guide.tex: Updated
+
+SVN Revision: 453
+",FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+gphoto/libgphoto2,ace8ba38cec71d93008084cf415d50263c0783f6,added lg_gsm,"added lg_gsm
+
+
+git-svn-id: 40dd595c6684d839db675001a64203a1457e7319@8322 67ed7778-7388-44ab-90cf-0a291f65f57c
+",FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+moodle/moodle,2396b0d0c2ac7b3e241f5e1c366a80615898f256,Fixed one typo-bug! :-P,"Fixed one typo-bug! :-P
+",TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,,random_batch_1
+google/llvm-propeller,f703b207cfc58d4bc46ad00926864305a01b9f3a,behold my standards-compliant humps!,"behold my standards-compliant humps!
+
+llvm-svn: 25033
+",FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,,,random_batch_1
+stinsonga/emacs-mirror,d105bfecce2288cd99f591382586a22a4ce1b6f2,(idlwave-shell-move-or-history): Remove spurious move to point-max (new comint behavior fixes).,"(idlwave-shell-move-or-history): Remove spurious move to point-max (new
+comint behavior fixes).
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,random_batch_1
+htcondor/htcondor,6d19b6ddca41e222745e815b9801dffa7423c5d1,Declare _Ckpt_Via_TCP_Stream as an extern rather than defining it here.,"Declare _Ckpt_Via_TCP_Stream as an extern rather than defining it here.
+",FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,,,random_batch_1
+samba-team/samba,c077bce5c0f760dc918b0442346502ec96a92c1b,nmbd would core dump if a large number of netbios aliases is set. The problem was a buffer overflow in process_node_status_request().,"nmbd would core dump if a large number of netbios aliases is set. The
+problem was a buffer overflow in process_node_status_request().
+
+this really points out a general problem is allocating MAX_DGRAM_SIZE
+packets on the stack in nmbd. There must be a better way.
+(This used to be commit 7db45f169c33e0f3a67ba2260049226992de8bdf)
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,random_batch_1
+moodle/moodle,2f05b46ec9944b986f5c8053abf8eab83deca8f0,Added language menus to top of login pages,"Added language menus to top of login pages
+",FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+alkacon/opencms-core,72edb1adcdffc9681c78dd982380ee2617a20db8,"Updated import so that default folders are ignored in modules, also updated replace - logic in old import for /pics/ issue","Updated import so that default folders are ignored in modules,
+also updated replace - logic in old import for /pics/ issue
+",FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+htcondor/htcondor,415cb08bc388fa255fce957716bb90e274b2b75e,Just a few trivial changes in typecasting to make things compile without warnings under Ultrix 4.3a.,"Just a few trivial changes in typecasting to make things compile without
+warnings under Ultrix 4.3a.
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+facebook/mysql-5.6,409fba38c930fb10f7de2d62cf7bf2af9b034140,"Style/spelling fixups, mainly of new privileges.","Style/spelling fixups, mainly of new privileges.
+",TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,,random_batch_1
+Alfresco/alfresco-repository,fa0bb97dc124531ec0d7cbd19099bcd25b24986b,"Rejiggered ChildEntry and its mapping, for considerably better performance.  Actually  it was kind of a Doh! moment.","Rejiggered ChildEntry and its mapping, for considerably better performance.  Actually 
+it was kind of a Doh! moment.
+
+
+git-svn-id: 73723c88e515ffefeb999f17f805bc28b7fb2a89@4336 c4b6b30b-aa2e-2d43-bbcb-ca4b014f7261
+",FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,,,random_batch_1
+zulip/zulip,779ab0e3ca887a1b170c8885cee2e943942d53eb,Get apply_markdown value from REQ if it exists,"Get apply_markdown value from REQ if it exists
+
+(imported from commit c93b0a96564535c0a0162e827a67379fdf166de9)
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+Wilfred/remacs,531cbff1cc53fe36ddf29a33876f3fdb9eb3666b,"(indent-sexp): If calculate-lisp-indent returns nil, don't change the line's indentation. (lisp-indent-line): Likewise. (lisp-comment-indent): Likewise. (calculate-lisp-indent): Return nil if line starts inside a string.","(indent-sexp): If calculate-lisp-indent returns nil,
+don't change the line's indentation.
+(lisp-indent-line): Likewise.
+(lisp-comment-indent): Likewise.
+(calculate-lisp-indent): Return nil if line starts inside a string.
+",FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+MarcNo/lifelines,7c7bb0d8c7432c828eb1a7d8ff8ae3806be9053b,Replaced itoa() int-to-string conversions with more-portable sprintf().,"Replaced itoa() int-to-string conversions with more-portable sprintf().
+",FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,,,random_batch_1
+alisw/AliRoot,5f61b857cd2acf41500b40e526eec403c2f14101,Corrected for a bug: fRo was defined twice,"Corrected for a bug: fRo was defined twice
+
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,random_batch_1
+wch/r-source,3e92ba48c2f36eebe0b82aef7956ba71c857e5b0,consistent use of dotrans,"consistent use of dotrans
+
+
+git-svn-id: f298e5bd0fb7dd56202a0647512068a43d54496a@8362 00db46b3-68df-0310-9c12-caf00c1e9a41
+",FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,,,random_batch_1
+unioslo/cerebrum,5ffbb117c6a49c04a9f77b6207ad1a6aad4a30d4,Fixed a typo bug in _query_disk_permissions().,"Fixed a typo bug in _query_disk_permissions().
+
+",TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,,random_batch_1
+freeciv/freeciv,b6e7bf86cbdd9b519050f1e7970c3960d565d135,Replaced some code with calls to is_valid_city_coords().,"Replaced some code with calls to is_valid_city_coords().
+
+Patch by Jason Short <jshort@users.sf.net> with format changes by me.
+
+[[originally from CVS; cvs2svn created svn r3674]]
+",FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,,,random_batch_1
+openssl/openssl,a22fb399cb7126d34134997db5536f0da67afcd2,Rework the system to generate shared libraries:,"Rework the system to generate shared libraries:
+
+  - Make note of the expected extension for the shared libraries and
+    if there is a need for symbolic links from for example libcrypto.so.0
+    to libcrypto.so.0.9.7.  There is extended info in Configure for
+    that.
+
+  - Make as few rebuilds of the shared libraries as possible.
+
+  - Still avoid linking the OpenSSL programs with the shared libraries.
+
+  - When installing, install the shared libraries separately from the
+    static ones.
+",FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,random_batch_1
+Wilfred/remacs,3755bd32c9022973de835c42ffdadde1beb32f3a,(ediff-backup): New autoloaded command.,"(ediff-backup): New autoloaded command.
+",FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+openbabel/openbabel,665ebcfdcdde297557f660116fac2e2805e9713d,Don't sync the .pbxuser preferences files.,"Don't sync the .pbxuser preferences files.
+
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+alisw/AliRoot,5fbab78cccfcec377dcb134112ba2e7cb8a1b5bf,Corrected initialization of the data members and data ownership,"Corrected initialization of the data members and data ownership
+
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,random_batch_1
+qgis/QGIS,2461bb69cf2da254b8b05cfd0a6630a75c715dad,bugfix related to single marker,"bugfix related to single marker
+
+
+git-svn-id: 736967b34281393df2c2d27a33b8980e2cefa726@1053 c8812cc2-4d05-0410-92ff-de0c093fc19c
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,random_batch_1
+unioslo/cerebrum,d958ba1fcae574bb7c03baf8f1a62ec746cc25b7,Updated thisone some time ago to reflect some name changes,"Updated thisone some time ago to reflect some name changes
+
+",FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+alisw/AliRoot,0b44b78bc0eed8c0ac73ab8367114afd69e8d3ba,"Add input file name as a parameter, default is galice.root","Add input file name as a parameter, default is galice.root
+
+",FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+GNOME/gnome-control-center,f824b0dcc0519656ba3f5edf7d0e6208e16cd488,Updated dated file headers,"Updated dated file headers
+",FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,,random_batch_1
+apache/jmeter,caf0b4aac2ab7da5d7063c3ab94372b8eefe56a1,"Continued the re-layout of the View Results Tree visualizer.  Still needs a couple of tweaks, and support for displaying images needs to be re-added.  Should get to that in the next day or two.","Continued the re-layout of the View Results Tree visualizer.  Still needs a couple of tweaks, and support for displaying images needs to be re-added.  Should get to that in the next day or two.
+
+
+git-svn-id: https://svn.apache.org/repos/asf/jakarta/jmeter/trunk@323222 13f79535-47bb-0310-9956-ffa450edef68
+
+Former-commit-id: e5d82dfd7d853905ad7e7ce51b10dcd4088af07e",FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+eworm-de/claws-mail,1a89bbface73c247295d696d7b5ce43ca815d6d8,0.8.11claws114,"0.8.11claws114
+
+* src/folder.c
+        check if remove virtual really exists before
+        calling the function
+",FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,random_batch_1
+scala/scala,1d90bcabca92c8e257fe8e4d55f970e2e224b7f8,- Reorganized the whole Makefile,"- Reorganized the whole Makefile
+
+",FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,,,random_batch_1
+ow2-proactive/scheduling,a6b7b41cc296868e2bc286da98e9ea8cf7d14132,modify the implementation of the Group.equals method,"modify the implementation of the Group.equals method
+
+
+git-svn-id: 9146c88ff6d39b48099bf954d15d68f687b3fa69@1437 28e8926c-6b08-0410-baaa-805c5e19b8d6
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+ow2-proactive/scheduling,fbc0bff9c4120265a08a97283dbcf881075f5ee0,Cosmetic fixes,"Cosmetic fixes
+
+
+git-svn-id: 9146c88ff6d39b48099bf954d15d68f687b3fa69@1352 28e8926c-6b08-0410-baaa-805c5e19b8d6
+",TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,,random_batch_1
+stinsonga/emacs-mirror,f629b14cc120323e1225869cbaf9c950cef42b2e,Initial revision,"Initial revision
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+rathena/rathena,8bacbf79c052636ad6a4a90d15ad823fd79de8b4,Fixed: Not being able to change to Clown or Creator.,"Fixed: Not being able to change to Clown or Creator.
+
+git-svn-id: 4563c7560ba9e24245f7bf824a5468224cfa5f15@61 54d463be-8e91-2dee-dedb-b68131a5f0ec
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,random_batch_1
+libMesh/libmesh,10c9bfd2c3d8eb8b1548becb47c4eee9d8593ce8,Updated the examples.,"Updated the examples.
+
+
+git-svn-id: e88a1e38e13faf406e05cc89eca8dd613216f6c4@887 434f946d-2f3d-0410-ba4c-cb9f52fb0dbf
+",FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,,random_batch_1
+unrealircd/unrealircd,e73cb3dac57c4832095554957e0d732048e5c3bb,Removed /doc/faq not needed included in new docset,"Removed /doc/faq not needed included in new docset
+",FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,,random_batch_1
+htcondor/htcondor,d539bef7c0f511c13e84701a6045b209185ba993,Added some code to prevent infinite loops in the case of circular scope.,"Added some code to prevent infinite loops in the case of circular scope.
+",TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,random_batch_1
+scop/bash-completion,6b5abdf0c601920da7adfcce82ef82303edc3a16,,"
+- reworking of Postgresql completion by Guillaume Rousse <rousse@ccr.jussieu.fr>
+",FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,,,random_batch_1
+google/llvm-propeller,9713b840cfe73c09c1fbf848c3dca689bdf36837,The check to see if an external function was marked internal was not reachable!,"The check to see if an external function was marked internal was not reachable!
+
+llvm-svn: 2366
+",FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,random_batch_1
+stinsonga/emacs-mirror,d6b4b3cfcc7bfc5a4a3b24acf2ce7e0a49c08b5f,Make server-start safe against accidental restarts.,"Make server-start safe against accidental restarts.
+
+* lisp/server.el (server-start): Ask before restarting if the old server
+  still has clients.  Added feedback messages.
+
+
+git-archimport-id: 6a009bcaac90060bfd81b04a308d5da0a17447a0@elte.hu--2004/emacs--multi-tty--0--patch-195
+",FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,random_batch_1
+facebook/mysql-5.6,a32bb3c0c40d1a5c7ace1291664152ecd6c3622a,Fix of broken 4.1 tree:  Initially my_time.c was added to sql/ link_sources target only. As it turns out this target is sometimes not called; instead of it make calls one hard-coded in top-level Makefile.am. Now adding linking of my_time.c to the top-level Makefile.am to (hopefully) cover all cases.,"Fix of broken 4.1 tree: 
+Initially my_time.c was added to sql/ link_sources target only.
+As it turns out this target is sometimes not called; instead of it
+make calls one hard-coded in top-level Makefile.am.
+Now adding linking of my_time.c to the top-level Makefile.am
+to (hopefully) cover all cases.
+",TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,,,random_batch_1
+bywatersolutions/bws-package,2feeb123ce0aed55a6e12ca4dc9a32a060319fc1,Accepts subjects separated by | or \n,"Accepts subjects separated by | or \n
+",FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+geneweb/geneweb,e7d0b412c4239a6dd8f987b9b22850646ab6bc4e,-,"-
+
+",FALSE,FALSE,FALSE,FALSE,,,,,,uncertain,no text,random_batch_1
+sba1/simplemail,8b92b8fbc705422fbfea099c07cd7c290ff1c913,utfcreate_len() uses iso-latin-1 if converting from a unknown codeset. fixed small problem in composewindow.,"utfcreate_len() uses iso-latin-1 if converting from a unknown codeset.
+fixed small problem in composewindow.
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,random_batch_1
+scipy/scipy,4bafb0d4c8448bd1fe5ffab0028e256ea9751d8c,Fixing sparse errors.,"Fixing sparse errors.
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,random_batch_1
+CORE-POS/IS4C,c44db43dc1d5dfb72a458e4a7bba977da46d80ce,Reduce reliance on strRemembered & msgrepeat in favor of passing URL parameters directly to pos2.php. This avoids tracing through code to find all the different places that might adjust a session variable,"Reduce reliance on strRemembered & msgrepeat in favor of
+passing URL parameters directly to pos2.php. This avoids
+tracing through code to find all the different places that
+might adjust a session variable
+",FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,,,random_batch_1
+ChimeraTK/DeviceAccess,a080bcecc2bc2c9f0f34fddf7a14295e28de4771,changed to smart pointer to try out example implementation with thread,"changed to smart pointer to try out example implementation with thread
+
+git-svn-id: 72bef8959051d9ca261a4f2ba8f41ef27517c010@1866 5f601a5c-88b9-47f3-b851-818f6741d00d
+",FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,uncertain,,random_batch_1
+Azure/azure-quickstart-templates,1065ba05c11278b92f665b0fb886ec28d86cb731,Changed the template base URI and removed JMeter backdoor to prepare for pull request,"Changed the template base URI and removed JMeter backdoor to prepare for pull request
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,random_batch_1
+ElektraInitiative/libelektra,e727b707c5826ecd0a02ccbe1bb9154d10ee288f,kdb umount: add verbosity,"kdb umount: add verbosity
+",FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+terraform-providers/terraform-provider-aws,16bcb1efcbec6c6cd8071d177e55a49352c5a1a9,provider/aws: Run errcheck in tests (#8579),"provider/aws: Run errcheck in tests (#8579)
+
+* provider/aws: Add errcheck to Makefile, error on unchecked errors
+
+* more exceptions
+
+* updates for errcheck to pass
+
+* reformat and spilt out the ignore statements
+
+* narrow down ignores
+
+* fix typo, only ignore Close and Write, instead of close or write
+",TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,,,random_batch_1
+vuejs/vuejs.org,23c9b273c72847437a5dc5a348767b9144104c68,edit Polymer comparison,"edit Polymer comparison
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+schemaorg/schemaorg,c1e2bba5c7cdf6bcd5276a1c10bfe00a38cb1c91,Removed leaky hyperlink,"Removed leaky hyperlink
+",FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,random_batch_1
+sklintyg/rehabstod,69b0bd9cc8604945817fe2118de22b720b6f7b7f,BUILDENV: Bumpade deploy.yml till första bygget av 1.1.0,"BUILDENV: Bumpade deploy.yml till första bygget av 1.1.0
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+popcodeorg/popcode,b8deb556cd10db97f0ab21d648c81b8184bf1fbd,Default to empty string when HTML not present in imported gist,"Default to empty string when HTML not present in imported gist
+
+When importing from a gist, we should gracefully handle one or more
+languages not having code present. This happens naturally when
+retrieving CSS and JavaScript, because for those languages we take *all*
+matching sections of the gist and join them together; thus the base case
+is joining an empty array, generating an empty string. In the case of
+HTML, however, it doesn’t make sense to concatenate multiple HTML
+sections, because each presumably contains a full HTML document; so, we
+just take the first. If no HTML document is present, this search yields
+an undefined value. So, explicitly fall back to an empty string.
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+skipzone/Illumicone,af1cbd18cd13fe27d6af48cdfed6889dffc75cf9,simulator config file,"simulator config file
+
+1st draft of json config for OpenPixelControl simulator: https://github.com/zestyping/openpixelcontrol",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+samvera/hyrax,99d0b238c6ce1681b279aeea6ffbd595187166bf,Addressing current_ability anonymous user,"Addressing current_ability anonymous user
+
+For an anonymous user, CanCanCan's current_ability.current_user returns
+a non-persisted user object. This was creating an error in the query.
+
+I also made adjustments to the Agent logic as there was left-over logic
+from copying from Sipity. The copy included options for expanding a
+User into many Agent objects based on the User's group memebership.
+
+Closes #1042
+",TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,random_batch_1
+pydanny/cookiecutter-django,f2aab6edc3ddbe3dd003041f39c0a28cce6f01b4,rename MIDDLEWARE_CLASSES to MIDDLEWARE,"rename MIDDLEWARE_CLASSES to MIDDLEWARE
+",FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,,,random_batch_1
+sdl/Sdl-Community,aa79b81dcc11574a0b7e4b3dd0c0ee79ed636f82,Merge branch 'master' of https://github.com/sdl/Sdl-Community,"Merge branch 'master' of https://github.com/sdl/Sdl-Community
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+yamcs/yamcs,0b99b027c54044108f31373b536419f003eb0054,eliminated some blocking from archive replay requests,"eliminated some blocking from archive replay requests
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+samba-team/samba,e7a9b398c79cb77678de18f3fc448131e1d6eb25,added yet another rpcclient command: svcstart <service name> [arg0] [arg1] ...,"added yet another rpcclient command: svcstart <service name> [arg0] [arg1] ...
+
+works with command-line completion on the service name (ohh yesss, this
+is becoming my favourite bit of functionality-on-the-side hee hee :)
+
+had to fix the svc_io_q_start_service() code which was missing the
+ptr_argv[] array in between the array-size and the UNISTR2-array.
+i.e it's actually an array of _pointers_ to unicode strings...
+(This used to be commit 2903f22e7ed9306229035accfa757fd810645820)
+",TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+riscv/riscv-openocd,233ab439c7e31299324ef056fc8b21f048e1c93e,Include files required to rebuild the HTTP web pages in distribution.,"Include files required to rebuild the HTTP web pages in distribution.
+
+git-svn-id: 9342d66d65669805328cff97dc80921f9b0842c0@1773 b42882b7-edfa-0310-969c-e2dbd0fdcd60
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+openstreetmap/openstreetmap-website,f183bd8ec8ad4ebae65135d8218b79cbf1c5c7d1,Some test improvements,"Some test improvements
+
+",FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+samba-team/samba,e85fb3d9c5f967809e69d5eb624af3d128394b69,install the 31.clamd script as 644 by default,"install the 31.clamd script as 644 by default
+
+(This used to be ctdb commit e57c47b75fa501223c57040eac73392b42ae549d)
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+wch/r-source,67b7bd1ac3b408b2c41087563cc58db0e9101f0c,"fix PR#6425, add example of biplot for prcomp output","fix PR#6425, add example of biplot for prcomp output
+
+
+git-svn-id: f298e5bd0fb7dd56202a0647512068a43d54496a@27968 00db46b3-68df-0310-9c12-caf00c1e9a41
+",FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,random_batch_1
+samba-team/samba,fb15b95bc5fe11e8ebbd4bfe5f29b4e454f3aee4,added a little bit of const magic to get rid of the data in librpc/gen_ndr/*.o (This used to be commit 866ef2edab91996964c8b43dbdd417f5908a00e1),"added a little bit of const magic to get rid of the data in librpc/gen_ndr/*.o
+(This used to be commit 866ef2edab91996964c8b43dbdd417f5908a00e1)
+",FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+google/llvm-propeller,6667bdbacad033f7090304fb559889a1ba08eab1,Update to use the new MathExtras.h support for log2 computation. Patch contributed by Jim Laskey!,"Update to use the new MathExtras.h support for log2 computation.
+Patch contributed by Jim Laskey!
+
+llvm-svn: 22594
+",FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+CZ-NIC/turris-os,5ad3b75ccea20e2c785f8c9b3d1edc61f5f63132,add soekris support for ImageBuilder,"add soekris support for ImageBuilder
+
+
+git-svn-id: b58b266a697b410d7896548b64a74808ed28ce2b@1663 3c298f89-4303-0410-b956-a3cf2f4a3e73
+",FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+jollaman999/openwrt,b124b6c2c47ac7d4b106fc51270900cc6eeff11a,fix building when host and target systems are same arch,"fix building when host and target systems are same arch
+
+SVN-Revision: 1730
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,random_batch_1
+Taeung/tip,a0d3bea3cf6c7c1b53a46432bd490b5dc784ca42,[NET]: Make skb->protocol __be16,"[NET]: Make skb->protocol __be16
+
+There are many instances of
+
+	skb->protocol = htons(ETH_P_*);
+	skb->protocol = __constant_htons(ETH_P_*);
+and
+	skb->protocol = *_type_trans(...);
+
+Most of *_type_trans() are already endian-annotated, so, let's shift
+attention on other warnings.
+
+Signed-off-by: Alexey Dobriyan <b99bff5923d24d2fb8e844db9dac7cd59203da1d@gmail.com>
+Signed-off-by: David S. Miller <fe08d3c717adf2ae63592e4c9aec6e3e404d8e3e@davemloft.net>
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+GNOME/chronojump,d6c9b76bcef2c886db97eb7cd35756a35bdfdc55,"All Reactive Jumps are working (i think) with the new chronopic code Delete files serial.* (old jump detection method) Write the jumps in seconds Bug repaired in showing identifier of reactive jumps in treeviewRj.Add Show first TC, later TV in treeviews","All Reactive Jumps are working (i think) with the new chronopic code
+Delete files serial.* (old jump detection method)
+Write the jumps in seconds
+Bug repaired in showing identifier of reactive jumps in treeviewRj.Add
+Show first TC, later TV in treeviews
+",TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+openSUSE/kernel-source,19b6b246c7877caa9fda9faf9cb3043cd99817e1,- kernel-source.changes.old: split 2004 and earlier changes into .old,"- kernel-source.changes.old: split 2004 and earlier changes into .old
+",FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,,rename changes file,random_batch_1
+wch/r-source,3cfebf45c17658a4d0273f7e3a7b2de35d2ca758,explain versioned installs,"explain versioned installs
+
+git-svn-id: f298e5bd0fb7dd56202a0647512068a43d54496a@31492 00db46b3-68df-0310-9c12-caf00c1e9a41
+",FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,,random_batch_1
+xfce-mirror/xfwm4,26c2b285c66b7e31b1ae954ab5eb52d6ed3d66e2,Cleanup,"Cleanup
+
+
+(Old svn revision: 16025)
+",FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,,,random_batch_1
+YAFNET/YAFNET,7333bdb2cf6a5bfff51c46b2583f3d5078cd7ca4,fixed the stupid bug that stopped people from saving...,"fixed the stupid bug that stopped people from saving...
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,random_batch_1
+wch/r-source,4916bd60ce312b43d49224c495c5b94d9f5ef573,R CMD check now tries to latex vignettes,"R CMD check now tries to latex vignettes
+
+git-svn-id: f298e5bd0fb7dd56202a0647512068a43d54496a@41959 00db46b3-68df-0310-9c12-caf00c1e9a41
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+facebook/mysql-5.6,258fb5d4c17853bede13a960ca838b37601e724e,branches/zip: Merge 1571:1575 from trunk.,"branches/zip: Merge 1571:1575 from trunk.
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+yade/trunk,46d6b2e7cf1e002f48369eeaacb6695ae73f2459,"Some changes in the computation of critical timestep so that the  triaxial samples do not explode when dt is set to the automatic  value. The change mostly affects the first steps of a simulation. Now,  dt is computed at each timestep during the first steps, whatever the  value of the user-defined variable ""timeStepUpdateInterval"", until a  relevant value is found.  ","Some changes in the computation of critical timestep so that the 
+triaxial samples do not explode when dt is set to the automatic 
+value. The change mostly affects the first steps of a simulation. Now, 
+dt is computed at each timestep during the first steps, whatever the 
+value of the user-defined variable ""timeStepUpdateInterval"", until a 
+relevant value is found.
+ 
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,random_batch_1
+facebook/mysql-5.6,b0b0b0fbc4c679f0ae9e0159ad26eb49ae484ab3,"Bug#25511   ""Federated INSERT failures""   Federated does not correctly handle ""INSERT...ON DUPLICATE KEY UPDATE""   However, implementing such support is not reasonably possible without   increasing complexity of the storage engine: checking that constraints   on remote server match local server and parsing error messages.   This patch causes 'ON DUPLICATE KEY' to fail with ER_DUP_KEY message   if a conflict occurs and not to fail silently.","Bug#25511
+  ""Federated INSERT failures""
+  Federated does not correctly handle ""INSERT...ON DUPLICATE KEY UPDATE""
+  However, implementing such support is not reasonably possible without
+  increasing complexity of the storage engine: checking that constraints
+  on remote server match local server and parsing error messages.
+  This patch causes 'ON DUPLICATE KEY' to fail with ER_DUP_KEY message
+  if a conflict occurs and not to fail silently.
+",TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,,,random_batch_1
+rncbc/qtractor,44fbb09fc59e1f8f530a3188859417829fbb00cf,- Time display format option naming repair.,"- Time display format option naming repair.
+
+
+git-svn-id: ab65d635cad753f79101b73fc7e2fbbed6fa95f4@588 304e7ffa-9037-4501-99c0-529757c9bbcc
+",FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,"reparing the format used by the software, not the software code format",random_batch_1
+SRI-CSL/PVS,fdb0b89ecfa929e04a7ee0999f7a5a6991a42cb5,Modified bdd.lisp and mu.lisp to separate the common parts from the foreign function parts.,"Modified bdd.lisp and mu.lisp to separate the common parts from the foreign
+function parts.
+
+
+git-svn-id: d36d0cfce3859e50aaa14f626f4f277c468f80bd@4898 ab98feae-9515-0410-836f-c1e8bd48b6aa
+",FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,,,random_batch_1
+SeleniumHQ/selenium,120ab18ac34e5c4547e8ed43e3657198649f5734,extracted RunOptions and URLConfiguration.,"extracted RunOptions and URLConfiguration.
+
+r3108
+",FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,,,random_batch_1
+Ensembl/ensembl-compara,2e9dbfa5c7f70f4b94ede93cde63955c3e52ad61,split BlastZ into an abstract superclass (PairAligner) and a subclass to facilitate easier implementation of other pairwise aligners whose Runnable outputs FeaturePair objects which need to be converted into GenomicAlignBlock objects.,"split BlastZ into an abstract superclass (PairAligner) and a subclass to
+facilitate easier implementation of other pairwise aligners whose
+Runnable outputs FeaturePair objects which need to be converted into
+GenomicAlignBlock objects.
+",FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,,,random_batch_1
+Taeung/tip,6caab489c5866788ae64a72986520b1f0e40c706,Fix btrfs_inc_ref to add backref hints,"Fix btrfs_inc_ref to add backref hints
+
+Signed-off-by: Chris Mason <a169954b4cb1a46cee25f659d3bddfebe02b5fba@oracle.com>
+",TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,random_batch_1
+mantidproject/mantid,1955bbafc93d1847a01cb2a999af07a13267db9b,re #64,"  re #64
+
+     Modifications to Matrix to avoid a stupid memory leak.
+
+
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,random_batch_1
+moodle/moodle,0c87b5aac05f81f6c298883e4201957a821cd52b,"MDL-11835 Changing default aggregateonlygraded back to true, but set this value to false for upgraded course categories. Also set grade display type to percentage for upgraded items, since this is the default setting in 1.8. Site default is Real display type.","MDL-11835 Changing default aggregateonlygraded back to true, but set this value to false for upgraded course categories. Also set grade display type to percentage for upgraded items, since this is the default setting in 1.8. Site default is Real display type.
+",FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,random_batch_1
+scoophealth/oscar,c1acb2c2cf100a474cc1cbc5a0174ec320c612dd,fixed link,"fixed link
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,random_batch_1
+arianne/stendhal,9176bd96c98cbb45d9432adcd4b2fb26117b60af,"Copleted grass and sea border, some flowers and grass, and a few objects","Copleted grass and sea border, some flowers and grass, and a few objects
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+bozimmerman/CoffeeMud,5134b807c288283b2427986abf40296ccc36e482,,"
+
+git-svn-id: svn://192.168.1.10/public/CoffeeMud@6321 0d6f1817-ed0e-0410-87c9-987e46238f29
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+apache/uima-uimaj,8c3eb77ccd53de1398e4fddef4796e7f9724da91,"PEAR Installer Help file now will reside in uima-tools.jar,  located through ClassLoader, and displayed using JEditorPane. Fixed warning message reported in UIMA-101. https://issues.apache.org/jira/browse/UIMA-101","PEAR Installer Help file now will reside in uima-tools.jar, 
+located through ClassLoader, and displayed using JEditorPane.
+Fixed warning message reported in UIMA-101.
+https://issues.apache.org/jira/browse/UIMA-101
+
+git-svn-id: 67f5ad311a3d1220c16f120748b212c18fe1c257@484828 13f79535-47bb-0310-9956-ffa450edef68
+",FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,,,random_batch_1
+HerculesWS/Hercules,d734b372c5f6a4499db0f971f5d9a9b0e250abe0,fixed a typo (bugreport:1998),"fixed a typo (bugreport:1998)
+
+
+git-svn-id: c1e39603916b71782cde5facdf0b79eff05c1414@13048 54d463be-8e91-2dee-dedb-b68131a5f0ec
+",FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,,random_batch_1
+arianne/stendhal,3b6cbb89cd14e2bc33a2399b2951d76f7d6fca69,add the remaining steps to test the complete obsidian knife quest,"add the remaining steps to test the complete obsidian knife quest
+",FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+consulo/consulo,d95fbf31c3cab0190c8017e62be6b3d8e5011658,latest version of JNA (supports 64-bit MacOS X),"latest version of JNA (supports 64-bit MacOS X)
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,random_batch_1
+MrMC/mrmc,2a7c5c5c461d6fa86046090fbe9e559ab725d65b,changed: Remove CGUIWindowFullScreen::NeedRenderFullScreen() as it's outgrown it's use.  Move to standard Render/FrameMove combination,"changed: Remove CGUIWindowFullScreen::NeedRenderFullScreen() as it's outgrown it's use.  Move to standard Render/FrameMove combination
+
+git-svn-id: db833e0ee90ec991bef537dc011d070417d74c01@27995 568bbfeb-2a22-0410-94d2-cc84cf5bfa90
+",FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,change_hits_batch_1
+cea-hpc/modules,faad53ed407202dcc38c4a327c24feda421a6681,"changed the way MODULEPATH is set up. since this is another environment variable like all the others, it is now set using the module command itself. pretty sneaky, huh?","changed the way MODULEPATH is set up. since this is another environment variable like all the others, it is now set using the module command itself. pretty sneaky, huh?
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,uncertain,,change_hits_batch_1
+GNOME/gedit,f3865cc8418a221fb05492a8485cb36dc161436d,"src/search.h: src/gE_document.c: Added the function count_lines_cb, and","src/search.h: src/gE_document.c: Added the function count_lines_cb, and
+
+1998-12-10  Evan Lawrence <evan@worldpath.net>
+
+	* src/search.c:
+	  src/search.h:
+	  src/gE_document.c: Added the function count_lines_cb, and
+	  changed it so the line button on the status bar calls it instead
+	  of goto_line_cb. count_lines_cb displays the number of lines in
+	  the current document, and the current line number the cursor
+	  is on.
+
+	* src/menus.c: Added ""Search for Line..."" to the Search menu, and
+	  added the _'s to main items on the menu bar to allow for keyboard
+	  navigation. _This will probably break some internationalization_
+",FALSE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,,,change_hits_batch_1
+BabylonJS/Babylon.js,ed4853244bc3d218e1d55b4a44f571dc8da1cc84,code doc and api changes,"code doc and api changes
+",FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,"due to api, not doc",change_hits_batch_1
+Wilfred/remacs,28b257dc4c8ba15a4045b13884054d8e626063cd,Remove 'tiny change' labels from Michael Cadilhac's changes.,"Remove 'tiny change' labels from Michael Cadilhac's changes.
+",FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,changes are the subject,change_hits_batch_1
+samba-team/samba,2fc75a6c4e930cee03ab53ab758b60fc4f9ff0f7,"Adapt to changes in Samba API's, fix formatting.","Adapt to changes in Samba API's, fix formatting.
+",TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,,,change_hits_batch_1
+apache/commons-lang,977151904cb0cfe10fcba11d903ca4d693c7b0c8,Slight text change to download page,"Slight text change to download page
+
+git-svn-id: bab3daebc4e66440cbcc4aded890e63215874748@981379 13f79535-47bb-0310-9956-ffa450edef68
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,change_hits_batch_1
+md-5/jdk10,99dc58bd47dcd1af1246ee6d3577804d90176354,6909442: Fix comments in test/sun/tools/jhat/HatRun.java Summary: Update the comments in this test to match the changes in 6902325 Reviewed-by: ohair,"6909442: Fix comments in test/sun/tools/jhat/HatRun.java
+Summary: Update the comments in this test to match the changes in 6902325
+Reviewed-by: ohair
+",FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,,,change_hits_batch_1
+KDE/kwin,d7a95d15492c2fe33ba15cc176dd27b90a494211,SVN_SILENT made messages (.desktop file),"SVN_SILENT made messages (.desktop file)
+
+svn path=/trunk/KDE/kdebase/workspace/; revision=1174377
+
+The following changes were in SVN, but were removed from git:
+
+M	wallpapers/Autumn/metadata.desktop
+M	wallpapers/Blue_Wood/metadata.desktop
+M	wallpapers/Grass/metadata.desktop
+M	wallpapers/Hanami/metadata.desktop
+",FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,uncertain,,change_hits_batch_1
+root-mirror/root,832d54e44cf33bd9b88bf36bc4f9e2186e6a7353,"From Matevz: Change signature of TPMERegexp member-function:  TString Substitute(const TString& s, const TString& r, Bool_t doDollarSubst=kTRUE); to  Int_t   Substitute(TString& s, const TString& r, Bool_t doDollarSubst=kTRUE); so that it conforms to the interface of the parent class TPRegexp.","From Matevz:
+Change signature of TPMERegexp member-function:
+ TString Substitute(const TString& s, const TString& r, Bool_t doDollarSubst=kTRUE);
+to
+ Int_t   Substitute(TString& s, const TString& r, Bool_t doDollarSubst=kTRUE);
+so that it conforms to the interface of the parent class TPRegexp.
+
+
+git-svn-id: acec3fd5b7ea1eb9e79d6329d318e8118ee2e14f@26600 27541ba8-7e3a-0410-8455-c3a389f83636
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+GNOME/mutter,46415bb248aa2b2744ae1ef715ac7b0f46cc014d,MetaWindowActor: Fix incorrect short-circuit,"MetaWindowActor: Fix incorrect short-circuit
+
+The code here was wrong in every way: it only updated the shape if all the
+borders changed. It never saved new last_borders even if it *had* changed,
+and the bounding rectangle's x and y positions were still important otherwise.
+
+This had user-visible impact when doing simple things like changing the
+border_width. It would short-circuit here and due to the above incorrectness,
+weirdness could happen where windows would be cut off and so on.
+
+https://bugzilla.gnome.org/show_bug.cgi?id=656334
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+XCSoar/XCSoar,1828546341fb876104db14dd5a41a77084d85041,dlgWindSettings: Simplified OnWindSpeed/DirectionData() functions,"dlgWindSettings: Simplified OnWindSpeed/DirectionData() functions
+
+No need to set the other value too when only one is changed.
+",FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,,,change_hits_batch_1
+erlang/otp,bfae535d4ac51d2c3bef146e0f058e105bb5e956,observer: Optimize row lookups,"observer: Optimize row lookups
+
+Use arrays instead of lists to cache data, gives faster lookups for
+large contents.
+
+Also update colors used in table viewer, indication new and changed rows.
+Other minor bugfixes in tables viewer.
+",TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,,,change_hits_batch_1
+dart-lang/sdk,33565cd64a9dd4a89f9b5deadb6a777a23bfb2a2,Change the error handling in dart:io,"Change the error handling in dart:io
+
+1. Change the argument on all onError handlers from Exception to
+Dynamic
+
+2. Throw an exception if an error ocours and there is no error handler
+present for handling it.
+
+For sockets there is the complication that an error on a socket is
+reported to the socket error handler, and each of the stream error
+handlers. The solution to this is to throw an exception if there was
+no error handler on either the socket or one of the streams.
+
+Fixed a number of bugs in tests revealed by errors no longer being
+silently ignored.
+
+R=ager@google.com
+
+BUG=none
+TEST=tests/standalone/src/io/*
+
+Review URL: https://chromiumcodereview.appspot.com//10173024
+
+git-svn-id: c93d8a2297af3b929165606efe145742a534bc71@6994 260f80e4-7a28-3924-810f-c04153c831b5
+",TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,change_hits_batch_1
+TeamHypersomnia/Hypersomnia,2b3e54864b3f465963902ff358c41f0dbc66ffc3,changed filters,"changed filters
+",FALSE,FALSE,FALSE,FALSE,,,,,,,,change_hits_batch_1
+Heigvd/Wegas,ffaa569d4d7f1e934f93950e7f5801be881885f9,ProgGame: add sprite + change stone hitbox,"ProgGame: add sprite + change stone hitbox
+",FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,change_hits_batch_1
+JGRennison/OpenTTD-patches,20c25761428f66249b1c00fc95eefb74b5f09ddf,(svn r25649) -Update from WebTranslator v3.0: estonian - 54 changes by KSiimson,"(svn r25649) -Update from WebTranslator v3.0:
+estonian - 54 changes by KSiimson
+
+",FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,,,change_hits_batch_1
+CraveFood/farmblocks,04115e6242d0fa93afc14479243f83e186eb178b,fix(radio): change value state when defaultValue prop is modified,"fix(radio): change value state when defaultValue prop is modified
+
+affects: @crave/farmblocks-input-radio
+
+ISSUES CLOSED: #314
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+ministryofjustice/advocate-defence-payments,b7a4506c47df462d67f9c15da8a047568d2385b4,updated footer and change pssword page,"updated footer and change pssword page
+",FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+SUSE/kiwi,a46c56a54632db3628a671247cece44f52bef5de,Validate use of GRUB_USE_LINUXEFI,"Validate use of GRUB_USE_LINUXEFI
+
+On systems that uses GRUB_USE_LINUXEFI with grub2 version
+less than 2.04 there is no support for dynamic EFI
+environment checking. In this condition we extend the grub
+setup to add this support. The change kiwi does is as
+follows:
+
+* Apply only on grub < 2.04
+  1. Modify 10_linux to set linux/initrd as variables
+  2. Write hybrid setup as 01_efihybrid
+
+This Fixes bsc#1165960 and bsc#1168480
+",TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+juju/juju,3ba150f14954e0a2876cfe03b18e0e7764036033,provisioner: changed environment config. test,"provisioner: changed environment config. test
+
+The tests now check that a changing environment configuration
+is watched by the provisioner and passed to the environment.
+
+R=niemeyer
+CC=
+https://codereview.appspot.com/6488057
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,change_hits_batch_1
+CuBoulder/express,2e775fde4e55f878b7c1ed2693d9e6502d07a349,changing more module package information,"changing more module package information
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,change_hits_batch_1
+cuba-platform/cuba,9551526a4cfdb78831025b066d174117ed1d5f77,Merged from release_5_2 Change access modifiers in EntityLog and EntityLogItemDetachListener to be able to modify parsing of EntityLogAttr'ibutes #PL-5004 [from revision 20195],"Merged from release_5_2
+Change access modifiers in EntityLog and EntityLogItemDetachListener to be able to modify parsing of EntityLogAttr'ibutes #PL-5004 [from revision 20195]
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+prometheus/prometheus,32b7595c4771b193b5869f5a97f935e404f16e30,Create promql package with lexer/parser.,"Create promql package with lexer/parser.
+
+This commit creates a (so far unused) package. It contains the a custom
+lexer/parser for the query language.
+
+ast.go: New AST that interacts well with the parser.
+lex.go: Custom lexer (new).
+lex_test.go: Lexer tests (new).
+parse.go: Custom parser (new).
+parse_test.go: Parser tests (new).
+functions.go: Changed function type, dummies for parser testing (barely changed/dummies).
+printer.go: Adapted from rules/ and adjusted to new AST (mostly unchanged, few additions).
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+stahta01/codeblocks_svn2git_metadata,18c459484a63d8300ad6a3b359f80a801ea6a1bc,* Check non builtin editors for file deletion and read/write-status change.,"* Check non builtin editors for file deletion and read/write-status change.
+
+git-svn-id: 2f11a1cf0a39f6e766db76572a835a5ba8f74bec@9942 2a5c6006-c6dd-42ca-98ab-0921f2732cef
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+TrinityCore/WowPacketParser,b5045f4a4358927cdeaf6b3e3459b3d89b0f1fcf,Fixed SMSG_ITEM_REFUND_RESULT structure and made some misc changes here and there,"Fixed SMSG_ITEM_REFUND_RESULT structure and made some misc changes here and there
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE,,,change_hits_batch_1
+savaslabs/savaslabs.github.io,cb9550bf40272a3e9d101f9dfb3c11c8843267ea,Issue #5119: Change hiring organization email,"Issue #5119: Change hiring organization email
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,change_hits_batch_1
+ILSCeV/Lara,38a857204602f31080ca9875ce4f16d5f656e931,Fix incorrect price representation and change formatting,"Fix incorrect price representation and change formatting
+
+Was showing external VVK for external AK price",TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+google/llvm-propeller,861e51a244d25e645538c9657a18ad04797b924a,Teach CMake to only touch tablegen-generated files if anything actually changed.,"Teach CMake to only touch tablegen-generated files if anything
+actually changed.
+
+Patch by Frits van Bommel!
+
+llvm-svn: 117102
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+Duke-Translational-Bioinformatics/duke-data-service,55bd558e4a4aae48ca40e51d21532c56cf3d2f1a,Merge pull request #1057 from Duke-Translational-Bioinformatics/DDS-923-rule_changes,"Merge pull request #1057 from Duke-Translational-Bioinformatics/DDS-923-rule_changes
+
+DDS-923 rule changes",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,change_hits_batch_1
+umbraco/Umbraco-CMS,92f85fad4a93ed5473911248403dd9e6bfbf7b57,Merging dictionary changes,"Merging dictionary changes
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+camunda/camunda-bpm-platform,89eb5b194b41807d7923471a4b19682567ba45b7,fix(tests): set isExecutable default false,"fix(tests): set isExecutable default false
+
+ * add isExecutable to process definitions
+ * change parsing behaviour for isExecutable
+
+ related to #CAM-5084
+",TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,,,change_hits_batch_1
+tensorflow/tensorflow,83c857f34d907ff8c696a25ec4a3f47e38e2fb40,Only modify non-.md files in doc processing. Change: 147218795,"Only modify non-.md files in doc processing.
+Change: 147218795
+",FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+gradle/gradle,72715e8c428f90ce767a3a4b67fe08573dd83ab7,Support testing changes happening during build,"Support testing changes happening during build
+
+- wait until latest build finishes
+
++review REVIEW-5709
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+sagemathinc/cocalc,d84d5b094a5ed7223cff284fd6f1cb20126c5f1d,change expect on empty dir list returned,"change expect on empty dir list returned
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+openstack/nova,e9515ba745babf906089e8895315f7f532ef2458,Add deprecated_since parameter,"Add deprecated_since parameter
+
+This can be used to formalize deprecation timelines, so that options
+are removed when planned. This includes moving some lines around, so
+that parameters are in a regular order. A future change can remove the
+fully deprecated options.
+
+The relevant commits are:
+
+    DEFAULT     vendordata_driver               21da1ba
+    cells       manager                         0fcec69
+    cells       driver                          579c98a
+    conductor   use_local                       a698871
+    conductor   manager                         e683c41
+    service     metadata_manager                0fcec69
+    service     compute_manager                 0fcec69
+    service     console_manager                 0fcec69
+    service     consoleauth_manager             0fcec69
+    service     cert_manager                    0fcec69
+    service     scheduler_manager               0fcec69
+    DEFAULT     quota_driver                    4306388
+    DEFAULT     compute_available_monitors      973f312
+    DEFAULT     compute_stats_class             3be36fc
+    DEFAULT     snapshot_name_template          aeee454
+    DEFAULT     db_driver                       c87ae92
+    DEFAULT     image_decryption_dir            be86b27
+    DEFAULT     s3_host                         be86b27
+    DEFAULT     s3_port                         be86b27
+    DEFAULT     s3_access_key                   be86b27
+    DEFAULT     s3_secret_key                   be86b27
+    DEFAULT     s3_use_ssl                      be86b27
+    DEFAULT     s3_affix_tenant                 be86b27
+    DEFAULT     enable_network_quota            d0b8fec
+    DEFAULT     quota_networks                  d0b8fec
+    glance      use_glance_v1                   16dd86f
+    image_file_url      filesystems             9931ef9
+    image_file_url:???  id                      9931ef9
+    image_file_url:???  mountpoint              9931ef9
+    DEFAULT     fatal_exception_format_errors   6919b25
+    barbican    catalog_info                    899a140
+    barbican    endpoint_template               899a140
+    barbican    os_region_name                  899a140
+    ironic      admin_username                  2ea2399
+    ironic      admin_password                  2ea2399
+    libvirt     use_usb_tablet                  73d5d1f
+    libvirt     image_info_filename_pattern     2c389cc
+    libvirt     checksum_base_images            2c389cc
+    libvirt     checksum_interval_seconds       2c389cc
+    DEFAULT     share_dhcp_address              e29a800
+    DEFAULT     security_group_api              ef957ee
+    osapi_v21   extensions_blacklist            11507ee
+    osapi_v21   extensions_whitelist            11507ee
+    osapi_v21   project_id_regex                1f16a76
+    DEFAULT     cert_topic                      5afc8e5
+    DEFAULT     default_flavor                  b7660e0
+
+Change-Id: I9e483109b52fe6d98e386a03010063cb37a0d9c8
+Implements: bp centralize-config-options-ocata
+",FALSE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+DTOcean/dtocean-core,ed0955de4b62bfcfd85339857b6cca605fa57238,Fix version 1.0.0 changes,"Fix version 1.0.0 changes
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+kubernetes/enhancements,85e0500941fb5daf4183c423728a6d8c3037aa65,kep: pod-overhead: fix formatting issues,"kep: pod-overhead: fix formatting issues
+
+Fix markdown formatting, and minor grammar change.
+
+Signed-off-by: Eric Ernst <5015973303f980f03dfbc137aa86aae091073f95@intel.com>
+",TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,,change_hits_batch_1
+mantechnology/wdrbd,1ba7577a46be45d835560663ba375729c628d981,Merged in DW-1999--verifier-detect-IoMarkIrpPending-was-not-called (pull request #806),"Merged in DW-1999--verifier-detect-IoMarkIrpPending-was-not-called (pull request #806)
+
+DW-1999 change the calling position of IoMarkIrpPending to set it in advance.
+
+Approved-by: 한성원 <10b003e73af000c07324acede0e4207655277c42@mantech.co.kr>
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+rakudo/rakudo,88c35ed04491903ee0f01b96a08e322f71a65339,Reword `is mangled` changes as a bug fix instead of new feature an addition,"Reword `is mangled` changes as a bug fix instead of new feature an addition
+
+Per comments https://github.com/rakudo/rakudo/pull/826#issuecomment-233106909
+",TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,,change_hits_batch_1
+DevExpress/testcafe,165c5da44a672392f5055f20c4376df831077b01,Force LF line endings (fixes #580) (#646),"Force LF line endings (fixes #580) (#646)
+
+* Add files before changing line endings
+
+* Change line endings
+",TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+GoogleCloudPlatform/gsutil,85945c6d4f46d08027f5b2dad21031a140ef1e14,Fix throughput update period,"Fix throughput update period
+
+This change increases the frequency of throughput reports
+to one per second.
+",TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,uncertain,,change_hits_batch_1
+easybuilders/easybuild-easyconfigs,8e0a53de4ada9b0531e72e6490d7c344bde25791,Requested change to URL in HDF5 1.8.18,"Requested change to URL in HDF5 1.8.18
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,change_hits_batch_1
+berta-cms/berta,fb45531e4c9b9cea0e4d4d577dc3c1987af3096f,add change detection error:ExpressionChangedAfterItHasBeenChecked,"add change detection
+error:ExpressionChangedAfterItHasBeenChecked
+",TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+jnidzwetzki/bboxdb,472350d94440f56c22c68b6f9b430bac377ae760,Changed future retry handling,Changed future retry handling,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,change_hits_batch_1
+blockchain/My-Wallet-V3-iOS,afc15b1b40e1e009d5e732f72326c3a788cb513d,Color changes on request payment screen,"Color changes on request payment screen
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,change_hits_batch_1
+metabrainz/listenbrainz-server,bb475b2c49db0c47ba5d67e0b36b3614f8587e79,Somehow the change to pgbouncer-master got lost. :(,"Somehow the change to pgbouncer-master got lost. :(
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,change_hits_batch_1
+sagemathinc/cocalc,0f865a5b416eb29f2f96d2bb7beb0c3a90636075,Changed the link,"Changed the link
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,change_hits_batch_1
+scality/backbeat,22c25cb244c54235a0af0c0cec386ad6f78af329,bf: ZENKO-1005 allow specifying partition in entry,"bf: ZENKO-1005 allow specifying partition in entry
+
+Changes in this commit:
+- Update node-rdkafka version
+  See: https://github.com/Blizzard/node-rdkafka/issues/375
+- Add specifying partition in kafka entries ONLY for
+  ""canary"" entries
+",FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+yast/yast-yast2,fdae5aa1425b97e67d121508c17f510a2f2d5441,More changes based on code review.,"More changes based on code review.
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+matrix-org/matrix-js-sdk,c92e510a4dd29f71dd05f918fac48f58df9f3c92,Pin to base-x 3.0.4,"Pin to base-x 3.0.4
+
+This avoids API changes in 3.0.5 (requiring `Buffer` instances), but more
+importantly also avoids dealing with ES6 in dependencies for another day.
+
+Signed-off-by: J. Ryan Stinnett <91e4c98f79b38ce04c052c188926e2d9ae2a3b28@gmail.com>
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+coq/coq,d800568149afd703e1d0f61496459bf1a364a853,"Merge PR #6021: Fixing #2881 (""change with"" failing in an Ltac definition).","Merge PR #6021: Fixing #2881 (""change with"" failing in an Ltac definition).
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+demisto/content,43d657bd40ed4312de1c152ab5c6117afa190ae8,Uploader - refactored Misc folder (#7006),"Uploader - refactored Misc folder (#7006)
+
+* refactored Misc folder to IndicatorTypes
+
+* changed argument order",FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,,,change_hits_batch_1
+revk/SolarSystem,f87253cd4aa46abf597dfa33363d620ebfe3ed6f,Changed some attributes and added group auto set controls,"Changed some attributes and added group auto set controls
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,change_hits_batch_1
+awslabs/s2n,faf85529449e0fb4f345d93dd6a7b9a5d481e9fb,Reinitialize the connection before each AEAD test,"Reinitialize the connection before each AEAD test
+
+This change fixes #150
+
+Prior to this change we were not initializing the conn structure
+prior to each test.
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+onedata/oneclient,e5c358514c60260f8a0b56fb9ad5eb0a91f13681,Squashed 'helpers/' changes from 125e627..a4a2be6,"Squashed 'helpers/' changes from 125e627..a4a2be6
+
+a4a2be6 VFS-1161 Remove Translator overhead on Stream.
+1c038d2 VFS-1161 Remove dependencies on experimental Boost libs.
+3869d93 Merge commit 'd48a60e819a114fe8823d9e6118133f2941f7168' as 'deps/asio'
+d48a60e Squashed 'deps/asio/' content from commit 66e76b9
+4de3478 Merge pull request #125 in VFS/helpers from feature/merge_changes_from_oneclient to develop
+7d80eac Fix oneclient compilation on OS X.
+7592b76 Merge pull request #124 in VFS/helpers from feature/VFS-1127-performance-test-framework-for-client to develop
+f02c13c Merge commit '2acc59538ffb708736554de8d56b17a1809a4212' into feature/VFS-1127-performance-test-framework-for-client
+4770f01 Merge branch 'feature/VFS-1142-client-packages' of ssh://git.plgrid.pl:7999/vfs/oneclient into feature/VFS-1127-performance-test-framework-for-client
+f27dce2 VFS-1142 Take glog from system.
+fc773ee VFS-1142 Move cmake scripts to cmake/ dir.
+bff58ea VFS-1142 Add missing cmake dependencies.
+
+git-subtree-dir: helpers
+git-subtree-split: a4a2be61e9c5299a4651fead78831b10652ad1ed
+",TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+SAP/openui5,a965545049d652b48620882c8952a0ebda497809,[FIX] sap.ui.dt - objectPage test fix,"[FIX] sap.ui.dt - objectPage test fix
+
+The test was faulty. The geometry change was attached on the child overlay but
+we need to wait for the geometry change on the parent overlay instead. Its
+geometry change includes the child size applying.
+
+Change-Id: I0e1d214a1c3e2c57dd8b76a073252ba33772561e
+Signed-off-by: Arthur Trauter <dfd156921707b83061165d3052ad8d2f7fd3cce4@sap.com>
+BCP: 1980531146
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+therion/therion,60425a4545b6317a9c2a869f995152a3250da9b7,update CHANGES,"update CHANGES
+",FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,,change_hits_batch_1
+sympa-community/sympa,5944556e4cc545bc8ab6e3efd46232e854509d1d,"[-bug] Change list config page input values encoding so that only quotes are escaped, previously applied tools::escape_html broke parameters with < or > symbols in their values, only converting quotes is enough since the values are always set as inputs' value attributes.","[-bug] Change list config page input values encoding so that only quotes are escaped, previously applied tools::escape_html broke parameters with < or > symbols in their values, only converting quotes is enough since the values are always set as inputs' value attributes.
+
+
+git-svn-id: 973a93887c0e784230682a02ead6b01d382dde7d@11745 05aa8bb8-cd2b-0410-b1d7-8918dfa770ce
+",FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+bcgov/hets,c9d25caf40c8ded11a900c1e27aa66bdcbfbc36d,Merge pull request #1389 from plitton/1.4,"Merge pull request #1389 from plitton/1.4
+
+Merge 1.3 changes",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+kaja47/asciiblog,e25359c94de9bf04b214b24fb034e4e5f3040421,change sectionn below article,"change sectionn below article
+",FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,,,change_hits_batch_1
+qt-labs/qbs,1eff54864642c459263de9653e26d9f56af04ce9,Do not access the bundle module unconditionally,"Do not access the bundle module unconditionally
+
+It is a mistake that the NativeBinary item currently pulls in the bundle
+module unconditionally (and also that the module is enabled everywhere).
+We want to change that. Prepare for the change by removing all
+unconditional accesses to the module's properties.
+
+Change-Id: If57b8222c1a0e2b09c33520882446fa71401f1f1
+Reviewed-by: Joerg Bornemann <47777b9406dbddd02a3fdca8341789a013805a11@qt.io>
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+X-Sharp/XSharpPublic,0a8057c24c684d6264bbc5356478add66eda9afc,"Several runtime changes, work in progress","Several runtime changes, work in progress
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+apache/spark,eaf35de2471fac4337dd2920026836d52b1ec847,[SPARK-23064][SS][DOCS] Stream-stream joins Documentation - follow up,"[SPARK-23064][SS][DOCS] Stream-stream joins Documentation - follow up
+
+## What changes were proposed in this pull request?
+Further clarification of caveats in using stream-stream outer joins.
+
+## How was this patch tested?
+N/A
+
+Author: Tathagata Das <tathagata.das1565@gmail.com>
+
+Closes #20494 from tdas/SPARK-23064-2.
+",FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+OntimizeWeb/ontimize-web-ngx,cf0652dc405c9929193814c0f9985093c45bffa0,Changing filter-case-sensitive default value,"Changing filter-case-sensitive default value
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,change_hits_batch_1
+erxes/erxes,aec55f954e1459c997a9146d10b7b7ca6801c541,added column engageMessageList and engageForm design changed,"added column engageMessageList and engageForm design changed
+",FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,change_hits_batch_1
+mongodb/mongo-php-driver,44ee52974391d4ce0702ac84980135f0fe6af76f,Use longer maxAwaitTimeMS in changeStream test,"Use longer maxAwaitTimeMS in changeStream test
+
+This makes the test more robust, since 100ms may not be long enough for the change to appear on some runs.
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+apache/jmeter,daab5c97424325ecde69b676acca5420caf205d3,Markup changes. Addition of code tags.,"Markup changes. Addition of code tags.
+
+git-svn-id: https://svn.apache.org/repos/asf/jmeter/trunk@1714326 13f79535-47bb-0310-9956-ffa450edef68
+
+Former-commit-id: d619a26b9c07f7928aeb8c29c1942326e39e511f",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,change_hits_batch_1
+tensorflow/tensorflow,fc415ed44f2b0fe732562317d2c3ac5304f431a2,internal change,"internal change
+
+PiperOrigin-RevId: 182294233
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,change_hits_batch_1
+miraheze/mw-config,64025fc54d1bc8b860137410edcbab9664d1c3d6,change logo and favicon for opendominionwiki per req T2814,change logo and favicon for opendominionwiki per req T2814,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,change_hits_batch_1
+apache/spark,096552ae4d6fcef5e20c54384a2687db41ba2fa1,[SPARK-26859][SQL] Fix field writer index bug in non-vectorized ORC deserializer,"[SPARK-26859][SQL] Fix field writer index bug in non-vectorized ORC deserializer
+
+## What changes were proposed in this pull request?
+
+This happens in a schema evolution use case only when a user specifies the schema manually and use non-vectorized ORC deserializer code path.
+
+There is a bug in `OrcDeserializer.scala` that results in `null`s being set at the wrong column position, and for state from previous records to remain uncleared in next records. There are more details for when exactly the bug gets triggered and what the outcome is in the [JIRA issue](https://jira.apache.org/jira/browse/SPARK-26859).
+
+The high-level summary is that this bug results in severe data correctness issues, but fortunately the set of conditions to expose the bug are complicated and make the surface area somewhat small.
+
+This change fixes the problem and adds a respective test.
+
+## How was this patch tested?
+
+Pass the Jenkins with the newly added test cases.
+
+Closes #23766 from IvanVergiliev/fix-orc-deserializer.
+
+Lead-authored-by: Ivan Vergiliev <99e3d406f03effbe7ad0d7ba6648ba6700b4be66@gmail.com>
+Co-authored-by: Dongjoon Hyun <6ff48b33cbb828151035af58a92f18a39f1d1036@apache.org>
+Signed-off-by: Wenchen Fan <563f5923eae9a92c8a3f34a26b67fa348a303ed1@databricks.com>
+",TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+googleapis/google-cloud-dotnet,30d259414e19acb5c284c7f7f5375fd42d8f4e56,Improve Travis jobs,"Improve Travis jobs
+
+- Name each job for readability
+- Introduce an ""inverse"" regex to easily spot non-Cloud APIs
+- Add a change detector (see PR for sample output)
+",FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+google/closure-templates,e65d5bb74e3ffc4709dcce3fddac94431e5f61fa,"Migrate users from the old, deprecated Subject.fail* methods to the new Subject.fail* methods or, in some cases, to Subject.check.","Migrate users from the old, deprecated Subject.fail* methods to the new Subject.fail* methods or, in some cases, to Subject.check.
+
+Most of the changes in this CL were made manually.
+
+I've tried to preserve all information (and of course behavior!), but the format and grammar of the messages does change. For example before-and-after messages, see the LSC doc.
+
+In some of the CLs in this round (e.g., jscomp), I don't know a lot about the domain being tested, and the assertions are complex, so please let me know if my new phrasing is wrong or confusing.
+
+Thanks again for your patience with all the Truth changes lately.
+
+END_PUBLIC
+
+More information:
+  []
+
+Tested:
+    [] for global presubmit queue
+    []
+
+-------------
+Created by MOE: https://github.com/google/moe
+MOE_MIGRATED_REVID=246840960
+",TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,uncertain,,change_hits_batch_1
+rauc/rauc,5e725a3546d0687452111e732542091ebb60c9b2,src/update_handler: add support for updating boot partitions in MBR,"src/update_handler: add support for updating boot partitions in MBR
+
+This introduces the possibility to update the bootloader of systems which
+boot from a partition in the MBR partition table.
+To differentiate between active and inactive partition, two new
+configurations are introduced for slots: region-start and region-end.
+
+After the inactive partition is written, the partition is activated by
+changing the partition entry and rewriting the MBR.
+
+Signed-off-by: Thomas Haemmerle <eef4c5d50da40f0b0e1fb7ff593fb5224f04b52f@wolfvision.net>
+",FALSE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+os2kitos/kitos,98c15b674e02a6687e7fe88981bd0e3a253f730e,Helptexts change DONE,"Helptexts change DONE
+",FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,,change_hits_batch_1
+freeciv/freeciv,d6a752e348ec42ee8db6400a2d25f9ca502f8e34,Change a number of functions to accept const player struct parameters.  The player dialog columns array is changed so its function callbacks take const parameters.,"Change a number of functions to accept const player struct parameters.  The
+player dialog columns array is changed so its function callbacks take
+const parameters.
+
+Patch by Frederic Briere <fbriere@fbriere.net> in PR#11489 with added
+comments by me.
+
+[[originally from CVS; cvs2svn created svn r9373]]
+",FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,change_hits_batch_1
+alkacon/opencms-core,0a9952604fcedda9fbd54c3e063332cab2ca83c2,changed layout of setup wizard,"changed layout of setup wizard
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,change_hits_batch_1
+wongsyrone/lede-1,bf445b654f509dda25bf75bc11139aacfba1cbf5,"Ack (finally) name change in subpackages, tweak package build","Ack (finally) name change in subpackages, tweak package build
+
+SVN-Revision: 976
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,uncertain,,change_hits_batch_1
+samba-team/samba,08f0562240155a871bd2a78d217db660e8ee3c91,selftest: Run dbcheck and improved upgrdeprovision tests against release-4-0-0,"selftest: Run dbcheck and improved upgrdeprovision tests against release-4-0-0
+
+The improved upgradeprovision tests now call ldapcmp to verify the
+changes made do actually bring the database in line with a fresh
+provision.
+
+Andrew Bartlett
+
+Reviewed-by: Stefan Metzmacher <f1988b9e977fc98ae4b41148d1c7fe6accb829c3@samba.org>
+",FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+PixarAnimationStudios/OpenSubdiv,0d5b543c4acad580ebf3b97a1b299145c055dede,CpuGLVB: code review changes,"CpuGLVB: code review changes
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+cstim/gwenhywfar,52a959674bbbf9ec83a637be48056c8c6344ad12,minor changes,"minor changes
+
+
+git-svn-id: a739a095880fa3ebc46f89d9df64e20166cf4ba9@199 70169cfe-8b10-0410-8925-dcb4b91034d8
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,change_hits_batch_1
+Taeung/tip,269954e542328f014fc07fbb0a986192f7a1cced,USB: don't change HC power state for a FREEZE,"USB: don't change HC power state for a FREEZE
+
+This patch (as1016) prevents PCI-based host controllers from
+undergoing a power-state change during a FREEZE or a PRETHAW.  Such
+changes are needed only during a SUSPEND.
+
+Signed-off-by: Alan Stern <75ea6bb7bfc1186f92d26164de5f9268c9a45b59@rowland.harvard.edu>
+CC: David Brownell <e543181633fc0fc2787945ef377537d9112d0c96@pacbell.net>
+Signed-off-by: Greg Kroah-Hartman <4645f7897fd33786a2ee1264d590b3c400559d85@suse.de>
+
+",FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+facebookexperimental/eden,e69254e9489368362ffbebf6459d88504f2bd3f9,subrepo: fix svnsubrepo.dirty() checking of ignoreupdate (issue2499),"subrepo: fix svnsubrepo.dirty() checking of ignoreupdate (issue2499)
+
+The ignoreupdate flag to subrepo.dirty(), introduced in 55e4073493fc, is
+correctly checked with this change.
+",TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+stinsonga/emacs-mirror,7c655cf643671126b4c3aa3b574b8ac5efbd9bd3,"(highlight-changes-mode): Rename from highlight-changes; no longer uses sub-modes active and passive;  implemented by define-minor-mode. (highlight-changes-toggle-visibility): New function, to replace the old passive/active submodes of global-highlight-changes-mode; implemented by define-minor-mode. (global-highlight-changes-mode'): Rename from global-highlight-changes; rewrite using define-globalized-minor-mode. (hilit-chg-major-mode-hook, hilit-chg-check-global) (hilit-chg-post-command-hook, hilit-chg-check-global) (hilit-chg-update-all-buffers, hilit-chg-turn-off-maybe): Remove due to use of define-globalized-minor-mode. (highlight-changes-global-initial-state): Change to be boolean. (highlight-changes-visible-string, highlight-changes-invisible-string): Rename from highlight-changes-active-string and highlight-changes-passive-string. (hilit-chg-update, hilit-chg-set): Use them. (global-highlight-changes-mode): Rename from global-highlight-changes. (hilit-chg-map-changes, hilit-chg-display-changes): Add arguments to docstring. (hilit-chg-hide-changes): Rewrite to use dolist. (hilit-chg-set-face-on-change, hilit-chg-update) (highlight-changes-rotate-faces): Use highlight-changes-visible-mode variable instead of testing highlight-changes-mode. (highlight-markup-buffers): Add reuire ediff-util;  argument on calls to highlight-changes-mode changed. (highlight-compare-with-file): Fix problems with interactive call giving invalid default file.","(highlight-changes-mode): Rename from
+highlight-changes; no longer uses sub-modes active and
+passive;  implemented by define-minor-mode.
+(highlight-changes-toggle-visibility): New function, to replace
+the old passive/active submodes of global-highlight-changes-mode;
+implemented by define-minor-mode.
+(global-highlight-changes-mode'): Rename from
+global-highlight-changes; rewrite using define-globalized-minor-mode.
+(hilit-chg-major-mode-hook, hilit-chg-check-global)
+(hilit-chg-post-command-hook, hilit-chg-check-global)
+(hilit-chg-update-all-buffers, hilit-chg-turn-off-maybe): Remove due
+to use of define-globalized-minor-mode.
+(highlight-changes-global-initial-state): Change to be boolean.
+(highlight-changes-visible-string, highlight-changes-invisible-string):
+Rename from highlight-changes-active-string and
+highlight-changes-passive-string.
+(hilit-chg-update, hilit-chg-set): Use them.
+(global-highlight-changes-mode): Rename from global-highlight-changes.
+(hilit-chg-map-changes, hilit-chg-display-changes): Add arguments to
+docstring.
+(hilit-chg-hide-changes): Rewrite to use dolist.
+(hilit-chg-set-face-on-change, hilit-chg-update)
+(highlight-changes-rotate-faces): Use highlight-changes-visible-mode
+variable instead of testing highlight-changes-mode.
+(highlight-markup-buffers): Add reuire ediff-util;  argument on calls
+to highlight-changes-mode changed.
+(highlight-compare-with-file): Fix problems with interactive
+call giving invalid default file.
+",TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,,,change_hits_batch_1
+tensorflow/tensorflow,a325547f4c7bdb169c62bdffa894617beffa7e5f,"The Tensorflow logging level is configured in the code snippet at line 133, as the snippet's description explains at line 113. So I removed it from line 108, once is enough. Change: 142476362","The Tensorflow logging level is configured in the code snippet at line 133, as the snippet's description explains at line 113. So I removed it from line 108, once is enough.
+Change: 142476362
+",FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,,change_hits_batch_1
+qtile/qtile,1d11544d4ae043b4a99840616ee7ee93bbbc8c2f,support click for pause/play and scroll to change songs in mpd widget,"support click for pause/play and scroll to change songs in mpd widget
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+facebook/mysql-5.6,f0155f6a44dca6d90cb2ddfe23ec64ef4e9eb00c,"ALTER TABLE didn't remember the exact geometry type (POINT, LINESTRING, etc) and changed all into ""GEOMETRY"".","ALTER TABLE didn't remember the exact
+geometry type (POINT, LINESTRING, etc)
+and changed all into ""GEOMETRY"".
+",FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+tensorflow/tensorflow,c3955a3846fc50d4cf73dc99b09512f00966a874,Update generated Python Op docs. Change: 125610051,"Update generated Python Op docs.
+Change: 125610051
+",FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,,change_hits_batch_1
+hashicorp/consul,c58c53f448d8f97b25f212ed048551f375acb7a2,agent: RPC changes and blocking query support,"agent: RPC changes and blocking query support
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,change_hits_batch_1
+TileDB-Inc/TileDB,39f2540446adab49a6df0109b41d7f4302dac52c,change mpi lib linker flag,"change mpi lib linker flag
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,change_hits_batch_1
+sfu-fas/coursys,64ec52294bf624c5c278ddab0c37a6f26f0f02a9,"Changed back index page of advisor. Modified views, dashboard actions and url's","Changed back index page of advisor. Modified views, dashboard actions and url's
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,change_hits_batch_1
+libretro/RetroArch,331d59694076926823225dbe032a8a8decb572ea,(PS3) Made keybind changing code portable,"(PS3) Made keybind changing code portable
+",FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+miranda-ng/miranda-ng,90515ba54eedc07949206451c243d1e2148a4e43,fix for displaying our own version in ICQ View/change my details,"fix for displaying our own version in ICQ View/change my details
+
+git-svn-id: 4115c852ce6edf181d3c694a7293ab46e349b79a@5557 1316c22d-e87f-b044-9b9b-93d7a3e3ba9c
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+CZ-NIC/turris-os,e93c516f4c3ad2664d58040f3e6d871ab14a50d7,brcm47xx: change board detection for some Asus devices,"brcm47xx: change board detection for some Asus devices
+
+This closes #13316
+
+Signed-off-by: Hauke Mehrtens <hauke@hauke-m.de>
+
+
+git-svn-id: c673a1a018ba15e3442847f58d2337db82164816@37680 3c298f89-4303-0410-b956-a3cf2f4a3e73
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,change_hits_batch_1
+Laidout/laidout,b9545d704b611aeecc2e1973bb55e978a99c48f1,minor doc change,minor doc change,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,,change_hits_batch_1
+Taeung/tip,05bf58ca4b8f0be7d7af830f943f6d6b2c9ccee1,Merge branch 'sched-idle-for-linus' of git://git.kernel.org/pub/scm/linux/kernel/git/tip/tip,"Merge branch 'sched-idle-for-linus' of git://git.kernel.org/pub/scm/linux/kernel/git/tip/tip
+
+Pull sched/idle changes from Ingo Molnar:
+ ""More idle code reorganization, to prepare for more integration.
+
+  (Sent separately because it depended on pending timer work, which is
+  now upstream)""
+
+* 'sched-idle-for-linus' of git://git.kernel.org/pub/scm/linux/kernel/git/tip/tip:
+  sched/idle: Add more comments to the code
+  sched/idle: Move idle conditions in cpuidle_idle main function
+  sched/idle: Reorganize the idle loop
+  cpuidle/idle: Move the cpuidle_idle_call function to idle.c
+  idle/cpuidle: Split cpuidle_idle_call main function into smaller functions
+",FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,,,change_hits_batch_1
+materials-commons/materialscommons.org,888e5e334c25b8311cdea26644c0c7f4f06e1c12,fixed layout and tab changes,"fixed layout and tab changes
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+Koha-Community/Koha,066b55ef4d39cf422fc4f9755de6341a6b6410bb,Bug 10080: (followup) change two last instances of the old syspref name,"Bug 10080: (followup) change two last instances of the old syspref name
+
+Signed-off-by: Galen Charlton <ec70b30b7f2646a69ad76ef1c8908ce7ae37e284@esilibrary.com>
+",FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+KDE/kdenlive,ddbd58f6440af4c909ca95893b5e3da982b4ab51,Fix possible crash on change clip speed: http://www.kdenlive.org:80/mantis/view.php?id=699,"Fix possible crash on change clip speed:
+http://www.kdenlive.org:80/mantis/view.php?id=699
+
+svn path=/branches/KDE4/; revision=3081
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+artsy/eigen,ab4455064b279dbfa69f2b7c40f0da5b5b2c4e5c,Changes the size of the info button on the auctionVC - fixes #1207,"Changes the size of the info button on the auctionVC - fixes #1207
+",TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,change_hits_batch_1
+zulip/zulip,fa738728283aef9f38e7f64ddccc39a9eff742fa,media.css: Replace RGB colors with HSL colors.,"media.css: Replace RGB colors with HSL colors.
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,possibile_fn
+wongsyrone/lede-1,26754768121227b2fb8ee44809192aaa032e7816,merge netfilter kernel changes to 2.6.26 as well,"merge netfilter kernel changes to 2.6.26 as well
+
+SVN-Revision: 14600
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+facebook/mysql-5.6,62771338ca94eee0dfd23a2d5c2fab0269ff1508,Changes for --with-server-suffix Fixed mutex bug in logging (crash on windows when doing SET PASSWORD=) Changed MERGE  tables to not use FILE,"Changes for --with-server-suffix
+Fixed mutex bug in logging (crash on windows when doing SET PASSWORD=)
+Changed MERGE  tables to not use FILE
+",TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,,,possibile_fn
+JGRennison/OpenTTD-patches,e472fed85a8810180812d721d8a0486c64f5ec12,(svn r3219) -Codechange: removed the now obsolite code in the build train command to make half multiheaded engines,"(svn r3219) -Codechange: removed the now obsolite code in the build train command to make half multiheaded engines
+
+",FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,,,possibile_fn
+backdrop-ops/backdrop-pantheon,2c77a38848d313a0e19fec4d60b2aa9f027e3de1,,"
+- Small cosmetic change to the system module.
+",FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,,possibile_fn
+openstack/rpm-packaging,3e78e1b8075e811d0b024e8993d722d81e010a6e,Skip test suite on 32-bit platforms,"Skip test suite on 32-bit platforms
+
+There are some known mismatches (1024 vs 1024L) in the testsuite
+for 32bit platforms, and since it is not tested upstream either
+let's just skip it until it got fixed.
+
+Change-Id: I98dec8990e6aa6940ca48a42cf85f0e0406c0823
+",TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+openstack/tripleo-heat-templates,257855082abd78ac81407b8b11f8325fab649e8c,Disable stonith temporarily during upgrades,"Disable stonith temporarily during upgrades
+
+It is best if we disable stonith if a cluster has it configured and on,
+before we call ""pcs cluster stop --all"", because should a service fail
+to stop for whatever reason, pacemaker will fence the node where it
+happened. This is something that we unlikely want during an upgrade as
+it will make things worse.
+
+Once the cluster is stopped we can reenable stonith (if it was enabled
+to start with) in the CIB while the cluster is shut down.
+
+Closes-Bug: #1596065
+
+Change-Id: I38dcacfabc44539aab1f7da85168fe44a1b43a51
+",TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+qtproject/qt-creator,e17d09a83af3e86802776a0ab29920772fd3e3f3,QmlDesigner: fix that we get output only in error case,"QmlDesigner: fix that we get output only in error case
+
+Also compress output in three lines
+
+Change-Id: I5a6917f4243f05ff58692ffdb3b17412b49fdeb9
+Reviewed-by: Thomas Hartmann <588ee739c05aab7547907becfd1420d2b7316069@theqtcompany.com>
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,possibile_fn
+openstack/horizon,bf7c5908fbe46d322bb1842ff659206d8fdd3583,Output JS Karma test coverage reports to ./cover/,"Output JS Karma test coverage reports to ./cover/
+
+Per CTI direction (see bug filing), this patch moves the JS Karma test coverage
+reports to ./cover/ so they may be collected in the gate for archiving.
+
+The two runs each have their own directory so they don't overlap/conflict.
+
+Change-Id: I0b1536c115a516f4b6ab80b5ebab5337b308c210
+Closes-Bug: 1588389
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,sematic - due to the change of output,possibile_fn
+Ensembl/ensembl-webcode,ca7ac878ab8896956d49719c8d0462e9cc649aa8,"added calls to change block attributes including switching blocks! and also to add entries to blocks either ""_first"", ""_after"" or ""_before""","added calls to change block attributes including switching blocks! and also to add entries to blocks either ""_first"", ""_after"" or ""_before""
+",FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+JGRennison/OpenTTD-patches,377d11886cbd80cfbe29d74c808c5fb6ab7de219,(svn r21083) -Codechange: Limit the number of exceptions in the refittable cargo list to 7 (Eddi),"(svn r21083) -Codechange: Limit the number of exceptions in the refittable cargo list to 7 (Eddi)
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,possibile_fn
+couchbase/ns_server,d8750098e0d5b5e8e807f79d9080071b7367a026,delete /master db first when deleting bucket.,"delete /master db first when deleting bucket.
+
+So that set_views doesn't have to handle seemingly dead-lock prone
+deletion of partitions followed by deletion of master database (and
+thus design docs).
+
+Works around apparent deadlock in MB-4760.
+
+I've also changed call to binary:part/2 to binary:part/3 because the
+later doesn't have to allocate temporary tuple.
+
+Change-Id: Ief44e5a10f364dc4046ecd9939e948d80337c191
+Reviewed-on: http://review.couchbase.org/13017
+Tested-by: Aliaksey Kandratsenka <340b8e09ca65cd3fc686427fcfed17e87eaf61e2@gmail.com>
+Tested-by: Dale Harvey <491ccac09a36ad1e38b698f273b84fd8efc31071@arandomurl.com>
+Reviewed-by: Dale Harvey <491ccac09a36ad1e38b698f273b84fd8efc31071@arandomurl.com>
+",TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+wikimedia/oojs-ui,b77564e898c009767bc1833110c7fe487bbde290,build: Add exec:composer and add it to _ci,"build: Add exec:composer and add it to _ci
+
+Bug: T155483
+Change-Id: Ie69afbe3507ddf0bed74b4e9f4672ce2ff0c99b0
+",TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+openstack/heat,e97124a8edc0a2ec4b3e92ac51214b3e452b422b,Modify heat-engine's description in developer docs,"Modify heat-engine's description in developer docs
+
+Closes-Bug: #1462888
+
+Change-Id: I1fb034d69d899b67db2706a3c192fcc8e40f4aee
+",FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,,possibile_fn
+openstack/python-tripleoclient,7a768888343c32edbaeea87cc81d4ec884bd053a,Remove the keystone_pki cert generation from tripleoclient,"Remove the keystone_pki cert generation from tripleoclient
+
+This function is no longer needed and is only used in tests.
+
+Change-Id: I15724fe4bb072faf2a885d8cb1af31c2efc22cd4
+",FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,,,possibile_fn
+htcondor/htcondor,dc760f284cab02463bbdf66735f5e3e2bac4a8e8,"Changed string to std::string, so we don't need to declare that we are using the std namespace.","Changed string to std::string, so we don't need to declare
+that we are using the std namespace.
+",FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,,,possibile_fn
+JGRennison/OpenTTD-patches,4d7c5398896acca64a7691bc6dbb7041da1e3e13,"(svn r6721) -Codechange: some comments, aligning, types and variable localization.","(svn r6721) -Codechange: some comments, aligning, types and variable localization.
+",FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,,,possibile_fn
+sympa-community/sympa,fb7e7b08d4b94a851ff5210768ae82d7fac20f01,Changes: no more 'alias_manager' conf parameter ; also supress postfix_manager.pl,"Changes: no more 'alias_manager' conf parameter ; also supress postfix_manager.pl
+
+
+git-svn-id: 22dc95a18da3be607f2c736dfa19921a9f5780cd@1538 05aa8bb8-cd2b-0410-b1d7-8918dfa770ce
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,possibile_fn
+freeciv/freeciv,39772d685158672896e33873d60faa4291fbe8ff,Revert the tech_cost_style to the classical Freeciv style. Add info about the implications of the change.,"Revert the tech_cost_style to the classical Freeciv style. Add info
+about the implications of the change.
+
+Patch from Per I. Mathisen <per@leftist.net>.
+
+[[originally from CVS; cvs2svn created svn r4530]]
+",FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+bozimmerman/CoffeeMud,9a7c8fc86f35761e08e347f951f6782b53eb1caf,svnimporter generated comment: Renamed Prayer_HolyConviction.java to Prayer_Conviction.java. Changed path: [/Version 4.2/com/planet_ink/coffee_mud/Abilities/Prayers/Prayer_Conviction.java],"svnimporter generated comment: Renamed Prayer_HolyConviction.java to Prayer_Conviction.java. Changed path: [/Version 4.2/com/planet_ink/coffee_mud/Abilities/Prayers/Prayer_Conviction.java]
+
+git-svn-id: 0cdf8356e41b2d8ccbb41bb76c82068fe80b2514@3595 0d6f1817-ed0e-0410-87c9-987e46238f29
+",FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,,,possibile_fn
+wch/r-source,8f7b1028a15ae8cbc6ac6ca3aa06c2203f581819,change conditioning of Riconv.h,"change conditioning of Riconv.h
+
+git-svn-id: f298e5bd0fb7dd56202a0647512068a43d54496a@36303 00db46b3-68df-0310-9c12-caf00c1e9a41
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,possibile_fn
+JGRennison/OpenTTD-patches,4c703618fffc185dd944806edea4ef47a82c0730,(svn r16237) -Codechange: Add nested widgets to remaining network windows.,"(svn r16237) -Codechange: Add nested widgets to remaining network windows.
+",FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,possibile_fn
+GNOME/jhbuild,2273d878df6f0ab7795fd6d2235fec1890b3ece9,minimal changes to use subprocess module for build loop. Should probably,"minimal changes to use subprocess module for build loop. Should probably
+
+2005-06-27  James Henstridge  <james@jamesh.id.au>
+
+	* jhbuild/frontends/gtkui.py (GtkBuildScript.execute): minimal
+	changes to use subprocess module for build loop.  Should probably
+	be switched to use IO watches instead.
+
+	* jhbuild/modtypes/mozillamodule.py (MozillaModule.do_install):
+	use argument lists instead of argument strings in a few places.
+
+	* jhbuild/frontends/tinderbox.py (TinderboxBuildScript.execute):
+	use newer API.
+
+	* jhbuild/frontends/terminal.py (TerminalBuildScript.execute): use
+	newer API.
+
+	* jhbuild/utils/cmds.py (get_output): use close_fds=True when
+	spawning child.
+	(Pipeline): a class similar to subprocess.Popen that chains
+	together a number of subprocesses, making the stdin, stdout and
+	stderr available.
+	(pprint_output): change from execute_pprint() to take a
+	subprocess.Pipe-like object, and read data from it.
+",FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,,,possibile_fn
+Wilfred/remacs,a272e668c92ad0a4e0d986f7536862c3abb52bc2,(vc-hg-workfile-unchanged-p): New function.,"(vc-hg-workfile-unchanged-p): New function.
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+pallets/jinja,c97aab3876f264998c0398087f398b3108ed6c80,[svn] small doc changes,"[svn] small doc changes
+
+--HG--
+branch : trunk
+",FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,,possibile_fn
+tbreloff/Plots.jl,bc7f5118eaaa79acf77e6a05bf5f5027104c0bb4,changed package name for dpkg,"changed package name for dpkg
+",FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,,,possibile_fn
+xwiki/xwiki-platform,757bcef8c171e53ff3fffce0481d5924f3567ef8,"XWIKI-4581: Change the name for ""Background Color"" to ""Highlight Color""","XWIKI-4581: Change the name for ""Background Color"" to ""Highlight Color""
+
+
+git-svn-id: 04343649e741710b2e0f622af6defd1ac33e5ca5@25110 f329d543-caf0-0310-9063-dda96c69346f
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,possibile_fn
+simonmichael/hledger,0773dde8723bfa5b2a3074a0abdd8ab824e5f003,"web: ui cleanups, replace balance/register with combo view","web: ui cleanups, replace balance/register with combo view",FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,,,possibile_fn
+alisw/AliRoot,677670880db07dd0e2c4e154e0526ec4e5ac3cb9,change a warning into a debug message to avoid log contamination. (savannah bug #100090),"change a warning into a debug message to avoid log contamination. (savannah bug #100090)
+
+",TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,possibile_fn
+c2mon/c2mon,b378b2889ec47310b4149e0b60b64dcb26a241f5,DMN-1318: reverted last change,"DMN-1318: reverted last change
+
+",TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,possibile_fn
+fieldtrip/fieldtrip,497f51c84e7a695ea6269a36ce3ef142f44b661e,"For EGI simple binary format, deleted assumption that hdr.nSamplesPre must be no less than one. For EGI EGIS and EGI simple binary formats, the hdr.label changed to a column vector rather than a row vector as other parts of FT (or at least ft_appenddata.m) makes this assumption and were crashing.","For EGI simple binary format, deleted assumption that hdr.nSamplesPre must be no less than one.
+For EGI EGIS and EGI simple binary formats, the hdr.label changed to a column vector rather than a row vector
+as other parts of FT (or at least ft_appenddata.m) makes this assumption and were crashing.
+
+
+git-svn-id: acc6c3ca29b1786dc0c9899ede6e50e0d8935a36@529 0cf7c7f0-3615-4144-b4e6-68da3bce3cd0
+",TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,possibile_fn
+qtproject/qt-creator,7d79f4f87af145c2c20acc6bbcf16d15c6678702,Changed import reading to use the DifferenceHandler.,"Changed import reading to use the DifferenceHandler.
+",FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,possibile_fn
+tensorflow/tensorflow,c1775938ceb813988db622ecd899fc30dd49a34d,"Add Constant, Rng, and scalars to be moved along with reshapes in reshape mover. Change: 149369506","Add Constant, Rng, and scalars to be moved along with reshapes in reshape mover.
+Change: 149369506
+",FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,,,possibile_fn
+puavo-org/puavo-os,fe7c98a842e2386fa4f94226db38c51a069e79f8,Change unconfigure mode to 755 here as well.,"Change unconfigure mode to 755 here as well.
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,possibile_fn
+tmobile/jazz-installer,5b750db8911c04fd050807075ab77a9e807df1b4,Changes to get jenkins subnet from user.,"Changes to get jenkins subnet from user.
+
+
+Former-commit-id: 06e9fc1759b7adf2904a5a4d07a9c8728cd89684",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,possibile_fn
+gradle/gradle,ae7fb0c857697735c48c41a13e6282fe007aef15,"Change the new “ivy-publish” plugin to publish all visible configurations, instead of “archives” and the configurations it extends.","Change the new “ivy-publish” plugin to publish all visible configurations, instead of “archives” and the configurations it extends.
+",FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,possibile_fn
+ganga-devs/ganga,21706188dde48c42245cfb7e9293d03fb8e41897,Merging changes from Trunk,"Merging changes from Trunk
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,possibile_fn
+copasi/COPASI,fc7042a8bc905b6ed2bc528a17494482832c9f44,Fixed problem in detecting root sign changes during process queue execution.,"Fixed problem in detecting root sign changes during process queue
+execution.
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,possibile_fn
+tensorflow/tensorflow,ac7e6f38666240350e51b2d8d44a6c2a201c8866,Python3 fix in monitors_test Change: 125178681,"Python3 fix in monitors_test
+Change: 125178681
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,possibile_fn
+scalameta/scalameta,c8778388d7fa128290e4d02927df9b0bc016eb7d,attempt to fix https://github.com/scalameta/paradise/issues/10,"attempt to fix https://github.com/scalameta/paradise/issues/10
+
+typeOf/symbolOf/hygienicRef for existential types have been replaced
+with equivalent constructs that don't involve reification. To see why
+that's necessary, refer to the aforementioned issue.
+
+I don't like the fact that I can't test this in an automated fashion
+(well, at least I can't come up with a way of doing that at the moment).
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,possibile_fn
+JetBrains/intellij-community,6b7b22d88e0bbd5a63f0d52294fb2a85bd046738,"Git update: correctly say ""all files up to date"" when there's no remote changes","Git update: correctly say ""all files up to date"" when there's no remote changes
+",TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,possibile_fn
+Graylog2/graylog2-server,a973c3187a0b427564b63e4d148adf59de5173c6,Allow creating new unused parameter from 'Create' menu. (Graylog2/graylog-plugin-enterprise#502),"Allow creating new unused parameter from 'Create' menu. (Graylog2/graylog-plugin-enterprise#502)
+
+* Adding creator action to create new parameter.
+
+* Make creator actions (shown in create menu) pluggable.
+
+This change is registering creator actions (which are used from the ""+
+Create"" menu to create new entities in the enterprise bindings and
+adapts the `AddWidgetButton` component to pick them up, making it
+possible for other plugins to register actions.
+
+* Pre-set title by de-camel casing parameter name.
+
+* Setting promise and returning result from WidgetStore action.
+
+* Adding missing comma.
+
+* Correcting flow types.
+
+* Adapting and adding AddWidgetButton tests.
+
+* Fixing flow hints.
+
+* Waiting for ref to clipboard button container.
+
+* Keep code and button on same line. (Shout outs go to @kmerz)
+
+* Prevent overwriting declared parameters, update syntax helper.
+
+* Do not rerender fields when name changes.
+
+* Disabling flow error and adding comment for direct setter access.
+",TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,,,possibile_fn
+astropy/astropy,6e708ed87d8214e23446b277fca7093cb0d09fee,Merge pull request #9 from eteq/mdboom-misc-build-status-to-https,"Merge pull request #9 from eteq/mdboom-misc-build-status-to-https
+
+Changed jenkins build status badge to https",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,possibile_fn
+TEAMMATES/teammates,e1748108fae4472ef1eff6ec20612d2e9001f3c3,Starting Issue 472 [Buttons should not look like they are disabled] Changed background color and added cursor,"Starting Issue 472 [Buttons should not look like they are disabled]
+Changed background color and added cursor
+
+--HG--
+branch : Issue472
+
+
+Former-commit-id: dca04682cbf56c8e3ae602d608bb0d23ad9b2087
+Former-commit-id: 789b85c82912bec2dd277ec62f57e3d3c1af0442
+Former-commit-id: dac8aa5584d1a159980bc2c3fb6c3c4d39665073",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,possibile_fn
+Ardour/ardour,9875a958295353aabba73fb05f862c4f92ebb219,RAII collect processor-change signals,"RAII collect processor-change signals
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+JetBrains/intellij-community,1f7b8f38b8dd06b1cce55f8caba272733f67846d,StringBufferReplaceableByString: whitespace must be preserved between several adjacent comments,"StringBufferReplaceableByString: whitespace must be preserved between several adjacent comments
+",FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,uncertain,might be a bug,possibile_fn
+SubtitleEdit/subtitleedit,7771b5382a5f2729ea3c27bdd55477d7c41f009a,Update cs-CZ.xml,"Update cs-CZ.xml
+
+Replaced ExtractDateTimeInfo.Description by ExtractDateTimeInfo.OpenVideoFile. Sorry, I missed it.",FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,semantic,possibile_fn
+SAP/openui5,3875f138a8e2774702a0d2b0d390f70340703782,"Merge ""[FIX] sap.m.Popover: Popover shouldn't change the scroll left of window when runs on desktop""","Merge ""[FIX] sap.m.Popover: Popover shouldn't change the scroll left of window when runs on desktop""",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,possibile_fn
+opensim-org/opensim-core,d17df878ae80014ecb1911d3bc64dcb77d06ab02,Change editor of parent_body name in Joint(s) to a drop down rather than text string to avoid errors due to typos,"Change editor of parent_body name in Joint(s) to a drop down rather than text string to avoid errors due to typos
+
+git-svn-id: 9e047e1e624cce0a2485e750063112e834f85522@7510 fc29be9c-2cb0-420d-b520-73dbd18add6e
+",TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,possibile_fn
+aws/aws-sdk-js,2f746dc8a285b1fb2c5a7d34aac37efef15b4e7a,Make retry event replacement code more robust when retry is removed,"Make retry event replacement code more robust when retry is removed
+",FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+cakephp/cakephp,a37bdba8fe11e3734962d2b1dde3a7618d998d3b,Revert accidental change.,"Revert accidental change.
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,possibile_fn
+jp9000/obs-studio,717a2538f47963858fccb955d831a841e0fbc2b7,Implement source removal via GUI,"Implement source removal via GUI
+
+ - When the remove source tool icon is clicked, it will now remove the
+   source from the scene.
+
+ - Fixed a bug where the scene item removal callback would add the scene
+   item to the list instead of removing it.
+
+ - Changed AddSourcePopup to AddSourcePopupMenu.  Name actually confused
+   me once despite being the writer, so it was clearly a bad name.
+",TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,,,possibile_fn
+unknownbrackets/maxcso,4a7c1268e0543f37c47403689c26297918b39120,windows: define snprintf replacement as inline instead of static,"windows: define snprintf replacement as inline instead of static
+
+The MSVC compiler does not accept static methods defined in headers,
+when linking against a shared library. The snprintf replacement
+function used for windows, is now an inline function.
+
+PR-URL: https://github.com/libuv/libuv/pull/329
+Reviewed-By: Saúl Ibarra Corretgé <8a7991f6950ea189abf159d6ec98d2fcc13dc5f6@gmail.com>
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,user is unaware of the change though it is not a refactor,possibile_fn
+CartoDB/cartodb,d27b61d87f7031507fef94a82c5461584d01faff,Fix test due to changed code for error case,"Fix test due to changed code for error case
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,possibile_fn
+Taeung/tip,fb7f0398a98020def9429ddd7b4a8fc2d948b092,ARM: OMAP: Use explicit broadcast oneshot control function,"ARM: OMAP: Use explicit broadcast oneshot control function
+
+Replace the clockevents_notify() call with an explicit function call.
+
+Signed-off-by: Thomas Gleixner <00e4cf8f46a57000a44449bf9dd8cbbcc209fd2a@linutronix.de>
+Signed-off-by: Rafael J. Wysocki <27ffc44a8ec6a212fba98cfc3246c6ce8ab131e0@intel.com>
+Cc: Peter Zijlstra <3fddac958924aef220f202ca567388ddab3f14a8@infradead.org>
+Cc: Tony Lindgren <1001e8702733cced254345e193c88aaa47a4f5de@atomide.com>
+Link: a5a71c9aef3e30fae11de4a86f8b36e87027a826@vostro.rjw.lan
+Signed-off-by: Ingo Molnar <9dbbbf0688fedc85ad4da37637f1a64b8c718ee2@kernel.org>
+",FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+Taeung/tip,8d7dc9283f399e1fda4e48a1c453f689326d9396,rcu: Control grace-period delays directly from value,"rcu: Control grace-period delays directly from value
+
+In a misguided attempt to avoid an #ifdef, the use of the
+gp_init_delay module parameter was conditioned on the corresponding
+RCU_TORTURE_TEST_SLOW_INIT Kconfig variable, using IS_ENABLED() at
+the point of use in the code.  This meant that the compiler always saw
+the delay, which meant that RCU_TORTURE_TEST_SLOW_INIT_DELAY had to be
+unconditionally defined.  This in turn caused ""make oldconfig"" to ask
+pointless questions about the value of RCU_TORTURE_TEST_SLOW_INIT_DELAY
+in cases where it was not even used.
+
+This commit avoids these pointless questions by defining gp_init_delay
+under #ifdef.  In one branch, gp_init_delay is initialized to
+RCU_TORTURE_TEST_SLOW_INIT_DELAY and is also a module parameter (thus
+allowing boot-time modification), and in the other branch gp_init_delay
+is a const variable initialized by default to zero.
+
+This approach also simplifies the code at the delay point by eliminating
+the IS_DEFINED().  Because gp_init_delay is constant zero in the no-delay
+case intended for production use, the ""gp_init_delay > 0"" check causes
+the delay to become dead code, as desired in this case.  In addition,
+this commit replaces magic constant ""10"" with the preprocessor variable
+PER_RCU_NODE_PERIOD, which controls the number of grace periods that
+are allowed to elapse at full speed before a delay is inserted.
+
+Reported-by: Linus Torvalds <69652caca27c8b940640ad396ab71f93cacec34f@linux-foundation.org> Signed-off-by:
+Paul E. McKenney <paulmck@linux.vnet.ibm.com>
+",FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,possibile_fn
+TEAMMATES/teammates,b17d19e82581ba556b696a60e6104a59a92650dd,Replaced attributes with a class,"Replaced attributes with a class
+",FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,,,possibile_fn
+JetBrains/intellij-community,287390b839262d5a3f8ba8575638063bb7625497,be prepared to event log changes when expiring notifications (EA-53620 - IOOBE: MarkupModelImpl.addLineHighlighter),"be prepared to event log changes when expiring notifications (EA-53620 - IOOBE: MarkupModelImpl.addLineHighlighter)
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,uncertain,,possibile_fn
+openSUSE/open-build-service,b673f0e8a1a382113dafca385204104f12be997c,[webui] fix test cases,"[webui] fix test cases
+
+- take out some more caching (for now, to be readded in the models where
+  it's sane)
+- fix flags validation
+- redo the travis split
+- use truncation for database cleaner
+
+(and due to rubymine insisting replace """" with '' where no escaping is
+necessary)
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,possibile_fn
+libretro/RetroArch,967e1e2846b010c95ae2d582e04045d278b36100,(Android) Change packagename from org.retroarch to com.retroarch,"(Android) Change packagename from org.retroarch to com.retroarch
+",FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,,,possibile_fn
+mono/xwt,b573bcf842788e5ab030ab7783d80e2efe9878d4,Added FrameBox widget,"Added FrameBox widget
+
+This widget replaces the CustomFrame type in the Frame widget.
+",FALSE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,uncertain,"intersting case, should define a policy",possibile_fn
+giampaolo/psutil,f67b1d985c69672d903b3330f4184a1d47e4ceba,Added tag release-1.0.1 for changeset e957e3021ea9,"Added tag release-1.0.1 for changeset e957e3021ea9
+",FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,,possibile_fn
+moodle/moodle,60791f18cff305a4cef906f3b4d7585db8e3e952,MDL-32079 folder revision must be incremented after any file change,"MDL-32079 folder revision must be incremented after any file change
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,possibile_fn
+bywatersolutions/bws-package,2e72eb888016f60ce15958ecb37e0ae64f0c8454,Bug 10860: In-House Use,"Bug 10860: In-House Use
+
+This patch implements the In-House Use feature for Koha.
+
+It adds:
+- 2 new sysprefs:
+  'In-House Use' to enable/disable this feature
+  'In-House Use Forced' to enable/disable the feature for *all* users.
+- 2 new columns issues.inhouse_use and old_issues.inhouse_use
+- Datatable on the circulation history pages (readingrec) at the OPAC
+  and the intranet.
+
+A new checkbox in the Circulation tab. If checked, the issue become a
+in-house use (in the statistics and issues tables).
+When you check it, the due date changes to the today date.
+
+The syspref ""In-House Use Force"" allows to force the in-house use to
+permit the checkout even if the borrower is debarred or others problems.
+
+In the issue table, a new string (in red) marks the issue as ""in-house use"".
+
+The circulation history contains 3 tabs : ""all"", ""checkout"" and
+""in-house use"" (OPAC and intranet).
+
+The cronjob script:
+If AutomaticItemReturn if off, a library would like not to do a transit
+operation manually. This script (to launch each night) do returns
+for a specific branches.
+
+Test plan:
+1/ Execute the updatedatabase entry
+2/ Enable the 'In-House Use' pref.
+3/ Checkout a biblio for a patron and check the 'in-house use' checkbox.
+4/ Check that the due date is the today date (with 23:59) and is not modifiable.
+5/ Click on the check out button and check that the new check out
+appears in the table bellow with the ""(In-house use)"" string.
+6/ Go on the circulation history pages (readingrec and opac-readingrec)
+and try the 3 tabs. In the last one, your last checkout should appear.
+7/ Check in.
+8/ Check readingrec pages.
+9/ Choose a debarred patron and check that you cannot checkout a biblio
+for him.
+10/ Switch on the 'In-House Use Forced' pref
+11/ You are now allowed to checkout a biblio for the debarred patron.
+
+Signed-off-by: Chris Cormack <711c73f64afdce07b7e38039a96d2224209e9a6c@bigballofwax.co.nz>
+Signed-off-by: Tomas Cohen Arazi <63ac9f6777fb741d62c33cd73a438a8ce82c7d4a@gmail.com>
+",TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+stinsonga/emacs-mirror,9278f05860c41bd301ac0a5278f35f7cb10de20f,Omit trailing white space,"Omit trailing white space
+
+This should simplify switching to automated ChangeLogs.
+",FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+mogemimi/pomdog,38760b5886d45d899d8d5b1dae78eea969da5f57,Replace NSThread by std::thread,"Replace NSThread by std::thread
+",FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,,,possibile_fn
+containers/storage,f078bcd8e50913fd8b05022ebd047c5a1f2e3d52,devmapper: Rename NewTransactionId to OpenTransactionId,"devmapper: Rename NewTransactionId to OpenTransactionId
+
+Very soon we will have the notion of an open transaction and keep its
+details in a metafile.
+
+When a new transaction is opened, we allocate a new transaction Id, 
+do the device creation/deletion and then we will close the transaction.
+
+I thought that OpenTransactionId better represents the semantics of
+transaction Id associated with an open transaction instead of NewtransactionId.
+
+This patch just does the renaming. No functionality change.
+
+I have also introduced a structure ""Transaction"" which will keep all
+the details associated with a transaction. Later patches will add more
+fields in this structure.
+
+Signed-off-by: Vivek Goyal <61d11262d0d9873ddb5a887f48fcb04e8c5973d0@redhat.com>
+",FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,,,possibile_fn
+gorhill/uBlock,2c7d75c868e1aa7564285f36e44c82904e392cf3,looks like Chrome store quietly changed `nb` to `no`...,"looks like Chrome store quietly changed `nb` to `no`...
+",FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,uncertain,,possibile_fn
+stan-dev/math,3e744dc879fb970e820b8931bfc4051357eb2b90,Fix misc typos in manual and RELEASE notes,"Fix misc typos in manual and RELEASE notes
+
+- cbind and rbind to append_col and append_row
+- reference to ode_solve changed to integrate_ode
+- fix font rendering problems in boolean operators
+",TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,,,possibile_fn
+kubernetes/kubernetes,c47b9178b4c0a9a082f71e42aaf59506bf67d1c1,Replace the auth config file with a kubeconfig file when starting the kubelet on GCE.,"Replace the auth config file with a kubeconfig file when
+starting the kubelet on GCE.
+",FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+neos/neos-development-collection,5d784a4832cc2a3d4924d1ec8bef73b0cfa4f4bb,"TASK: Apply migration Neos.Neos-20161125122412 to package ""Neos.Media.Browser""","TASK: Apply migration Neos.Neos-20161125122412 to package ""Neos.Media.Browser""
+
+Allow to migrate Sites.xml files
+
+Note: This migration did not produce any changes, so the commit simply
+marks the migration as applied. This makes sure it will not be applied
+again.
+",FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+bendisposto/prob2-ui,ec77eb78ce2df9a76b9a6b24989193af01473f6d,Persist bounds of detached views using StageManager This replaces the previous code that used a different config file.,"Persist bounds of detached views using StageManager
+This replaces the previous code that used a different config file.
+",FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+spring-projects/spring-boot,7a73c5883f857f7dfb56d73410af96eae04a0e63,Avoid using @Order on @Configuration classes as Spring now honours it,"Avoid using @Order on @Configuration classes as Spring now honours it
+
+In Spring Framework 4.1, @Order on a @Configuration class had no effect.
+This allowed us to use it on auto-configuration classes to control
+the ordering of auto-configuration classes without it having any
+broader implications for configuration class ordering.
+
+Spring Framework 4.2 now honours @Order on @Configuration classes. This
+breaks a number of tests where we were relying on the order that the
+classes were passed to register when evaluating various bean conditions.
+
+This commit replaces the use of @Order on auto-configuration classes
+with a new annotation, @AutoConfigureOrder. The new annotation is
+handled by AutoConfigurationSorter where it’s used to order
+auto-configuration classes. This allows us to order auto-configuration
+classes without the unwanted side-effect of this also affecting the
+general ordering of configuration classes.
+
+See gh-2575
+",TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,,,possibile_fn
+galaxyproject/tools-iuc,8475f20839e4fe89e4be6b1812b086fea17d3755,Adding the files with optional parameters. There are still issues with the line difference and a change is yet to be done.,"Adding the files with optional parameters. There are still issues with the line difference and a change is yet to be done.
+",FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+obfuscated/codeblocks_sf,087533e84fecfaf58c085843c3e5a5b58f57871c,* Prepare for release: Setup debian change log so the,"* Prepare for release: Setup debian change log so the
+
+> This cherry-picks rev 11968 from the release-20.03 branch
+
+git-svn-id: 2f11a1cf0a39f6e766db76572a835a5ba8f74bec@12021 2a5c6006-c6dd-42ca-98ab-0921f2732cef
+",FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+wordpress-mobile/WordPress-Android,ac7f908806485ca41b7f61ce32d4f205ddd9e10f,added onCreateViewHolder changes with view types to determine viewholder,"added onCreateViewHolder changes with view types to determine viewholder
+
+",FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+Taeung/tip,267f1128583074b575b90a58de4dcb12dd25af96,locks: remove conditional lock release in middle of flock_lock_file,"locks: remove conditional lock release in middle of flock_lock_file
+
+As Linus pointed out:
+
+    Say we have an existing flock, and now do a new one that conflicts. I
+    see what looks like three separate bugs.
+
+     - We go through the first loop, find a lock of another type, and
+    delete it in preparation for replacing it
+
+     - we *drop* the lock context spinlock.
+
+     - BUG #1? So now there is no lock at all, and somebody can come in
+    and see that unlocked state. Is that really valid?
+
+     - another thread comes in while the first thread dropped the lock
+    context lock, and wants to add its own lock. It doesn't see the
+    deleted or pending locks, so it just adds it
+
+     - the first thread gets the context spinlock again, and adds the lock
+    that replaced the original
+
+     - BUG #2? So now there are *two* locks on the thing, and the next
+    time you do an unlock (or when you close the file), it will only
+    remove/replace the first one.
+
+...remove the ""drop the spinlock"" code in the middle of this function as
+it has always been suspicious. This should eliminate the potential race
+that can leave two locks for the same struct file on the list.
+
+He also pointed out another thing as a bug -- namely that you
+flock_lock_file removes the lock from the list unconditionally when
+doing a lock upgrade, without knowing whether it'll be able to set the
+new lock. Bruce pointed out that this is expected behavior and may help
+prevent certain deadlock situations.
+
+We may want to revisit that at some point, but it's probably best that
+we do so in the context of a different patchset.
+
+Reported-by: Linus Torvalds <69652caca27c8b940640ad396ab71f93cacec34f@linux-foundation.org>
+Signed-off-by: Jeff Layton <542dfe392278ff3cf017aafde9d989e8068d5c3e@primarydata.com>
+",TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,,,possibile_fn
+cuba-platform/cuba,077afe380ba81b7e88ffe184b7a5bc7a8d252513,lookup for selecting a filter replaced with popupButton. Filter name displayed in groupBox caption. Window for selecting a filter displayed if too many filters #PL-4488,"lookup for selecting a filter replaced with popupButton. Filter name displayed in groupBox caption. Window for selecting a filter displayed if too many filters #PL-4488
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,possibile_fn
+bradharding/doomretro,d37d2748d7fdb3d95729cd727dcd7388d4751ff2,Revert change to TEKWALL1 texture,"Revert change to TEKWALL1 texture
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,possibile_fn
+ManageIQ/manageiq,6b7c0c9850f0da47f0fa0f072eb1a436289e7d65,Renamed leftover usages of miqEditor to ManageIQ.editor,"Renamed leftover usages of miqEditor to ManageIQ.editor
+
+This issue was introduced in https://github.com/ManageIQ/manageiq/pull/3254, Commit SHA: a7966b2b
+changed leftover occurrences of miqEditor to use ManageIQ.editor
+
+fixes #3624
+",TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,,,possibile_fn
+bvcms/bvcms,f3789378f956443b7013900a4fd551a6fd35489c,InsertDraft Replacement Code,"InsertDraft Replacement Code
+
+Added Email Replacement code in the form of {insertdraft:Name_of-Draft}.
+It pulls the HTML content from the body of a named draft email.
+",FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+frappe/frappe,49768bf86aeef12232becc2b90b324b8af66b719,Merge pull request #1697 from KanchanChauhan/UXChanges,"Merge pull request #1697 from KanchanChauhan/UXChanges
+
+[WIP] Do not merge",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+avocado-framework-tests/avocado-misc-tests,407ced68e2bd2d9d9fa997babe7176d05d1d3c2f,generic/rcutorture: Reuse cpu functions for offline and online,"generic/rcutorture: Reuse cpu functions for offline and online
+
+CPU off-on commands from process.system() function never got
+executed, replace with cpu off on functions in utils.py
+Also added tags to be a kernel tests and replace skip with cancel
+
+Signed-off-by: Abdul Haleem <d72979407b2438b90c42979d11f88d04d190c5d3@linux.vnet.ibm.com>
+",FALSE,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,,,possibile_fn
+stinsonga/emacs-mirror,de7fc458e99867b6cb540ec033c3b740a1dd65e9,Revert my two recent process.c changes,"Revert my two recent process.c changes
+
+Revert ""Improve last commit to process.c"" and ""Remove callback-handled
+channels from Available set"" because they did not fix bug#21313.
+
+This reverts commits bfa1aa8e2bdaf14adbbf1e9e824051d3f740694c and
+27f871907cc24f33a7d12ac3a4ab71a88f0bc554..
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,possibile_fn
+llvm-mirror/llvm,3b75c0484a47712cec877ec9f2cd47c35b27093d,[CGP] transform select instructions into branches and sink expensive operands,"[CGP] transform select instructions into branches and sink expensive operands
+
+This was originally checked in at r250527, but reverted at r250570 because of PR25222.
+There were at least 2 problems: 
+1. The cost check was checking for an instruction with an exact cost of TCC_Expensive;
+that should have been >=.
+2. The cause of the clang stage 1 failures was illegally sinking 'call' instructions;
+we can't sink instructions that may have side effects / are not safe to execute speculatively.
+
+Fixed those conditions in sinkSelectOperand() and added test cases.
+
+Original commit message:
+This is a follow-up to the discussion in D12882.
+
+Ideally, we would like SimplifyCFG to be able to form select instructions even when the operands
+are expensive (as defined by the TTI cost model) because that may expose further optimizations.
+However, we would then like a later pass like CodeGenPrepare to undo that transformation if the
+target would likely benefit from not speculatively executing an expensive op (this patch).
+
+Once we have this safety mechanism in place, we can adjust SimplifyCFG to restore its
+select-formation behavior that changed with r248439.
+
+Differential Revision: http://reviews.llvm.org/D13297
+
+
+git-svn-id: 0ff597fd157e6f4fc38580e8d64ab130330d2411@250743 91177308-0d34-0410-b5e6-96231b3b80d8
+",TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,,,possibile_fn
+JetBrains/intellij-community,6a7c71d8b64e9576fdfa38b51a6bc3f37d599b08,PsiBuilder: introduce RecursiveBinder to replace temporary setRightCustomEdgeTokenBinderForNode() API,"PsiBuilder: introduce RecursiveBinder to replace temporary setRightCustomEdgeTokenBinderForNode() API
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+TryGhost/Ghost,ff7517b801389de0eca0e3769231ef39178eecb5,Switch RSS to use new filter param,"Switch RSS to use new filter param
+
+refs #5943, #5091
+
+- split out channel config
+- use config.theme instead of api calls to grab title & desc
+- wrap rss call in a function which sets channel config for RSS feeds
+- change rss `getData` function to use the new multiple-query-handling fetchData functionality
+- make sure channelConfig is set in all tests
+",FALSE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+google/llvm-propeller,3e718e08181b857c56480a10d7a3324e5019a5cb,[ORC] Fix the RPC unit test for header changes in r281171.,"[ORC] Fix the RPC unit test for header changes in r281171.
+
+llvm-svn: 281173
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,possibile_fn
+CenterForOpenScience/osf.io,637f6b382ec795669960b1c5f3668ffd8465e010,revert admin spam change,"revert admin spam change
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,possibile_fn
+Bitcoin-com/Wallet,36756f2814c4bcb0d9d1988b0d1b6b26f857f296,changed ios store bitcoin.com wallet url,"changed ios store bitcoin.com wallet url
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+eclipxe13/CfdiUtils,3f7689489e19b568cbb495dd82cc254f971f095a,Replace jakub-onderka/php-parallel-lint with overtrue/phplint,"Replace jakub-onderka/php-parallel-lint with overtrue/phplint
+
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+kubernetes/kubernetes,cf7073a8315aa964d744c6abc3255d0f75b3d265,Merge pull request #58973 from verb/cri-enum,"Merge pull request #58973 from verb/cri-enum
+
+Automatic merge from submit-queue (batch tested with PRs 59276, 51042, 58973, 59377, 59472). If you want to cherry-pick this change to another branch, please follow the instructions <a href=""https://github.com/kubernetes/community/blob/master/contributors/devel/cherry-picks.md"">here</a>.
+
+Update Container Runtime Interface to use enumerated namespace modes
+
+**What this PR does / why we need it**: This updates the CRI as described in the [Shared PID Namespace](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/node/pod-pid-namespace.md#container-runtime-interface-changes) proposal. This change to the alpha API is not backwards compatible: implementations of the CRI will need to update to the new API version.
+
+**Which issue(s) this PR fixes** *(optional, in `fixes #<issue number>(, fixes #<issue_number>, ...)` format, will close the issue(s) when PR gets merged)*:
+WIP #1615
+
+**Special notes for your reviewer**:
+/assign @yujuhong 
+
+**Release note**:
+
+```release-note
+[action-required] The Container Runtime Interface (CRI) version has increased from v1alpha1 to v1alpha2. Runtimes implementing the CRI will need to update to the new version, which configures container namespaces using an enumeration rather than booleans.
+```",TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,update,possibile_fn
+gradle/gradle,207de138edae296100edae45cf38ad5f331b328b,Fixed a couple of int tests for changes to output directory names.,"Fixed a couple of int tests for changes to output directory names.
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,possibile_fn
+yamcs/yamcs,15774c9846c4a830838fd179c5d05b1ca700d40c,"Make unprivileged username a constant, and set it to ""anonymous""","Make unprivileged username a constant, and set it to ""anonymous""
+
+I noticed that one place used ""unknownUser"" while other placing use
+""unknown"". This commit changes it to ""anonymous"", which is used by
+the studio, and IMO has better semantics. For those that care:
+
+- ""anonymous"" is known from FTP fame
+- ""unknown"" gives the impression that the client actually has a username
+but that Yamcs wasn't able to resolve it. That's a wrong impression.
+What it should mean is that the server just doesn't identify users,
+therefore everybody is ""anonymous"".
+
+At any rate, we should probably also include an extra flag to prevent
+the case where the user actually has a principal named ""anonymous"".
+",TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,,,possibile_fn
+apache/camel,f97ac2787b12e6469af9efee9f46f3100873abe5,CAMEL-9201 - Minor fixes to the project structure.,"CAMEL-9201 - Minor fixes to the project structure.
+
+The changes introduced no longer depend on DeltaSpike Core, so removed that dependency and upgraded to the latest patch version (v1.5.4)
+Updated some docs, they were referring to RoutesBuilder and extending it, however its an interface so that doesn't work well.
+",TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE,,,possibile_fn
+apache/libcloud,e77580d8e0bfacf95e68210448186af4b9109025,Convert object_size to string before adding it to a header.,"Convert object_size to string before adding it to a header.
+
+Since python-requests 2.11
+(see https://github.com/requests/requests/issues/3477), integer values
+in headers are no longer automatically converted to strings, so we need
+to do it ourselves.
+
+This is the same change that was done a couple of lines above for the
+Content-Length header in commit 28a559042.
+
+Signed-off-by: Quentin Pradet <d17611fde61d73f8de1b8b01bc47d446558ccd8e@apache.org>
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+Vizzuality/gfw,29717cb817b2756c45e4d5206f70de84eb3d2f9c,closed SGF application period,"closed SGF application period
+
+Under How To Apply, changed text to: The Small Grants Fund application period is now closed. For questions about the Small Grants Fund, or to sign up to be notified when the application period opens, please write to gfwfund@wri.org.",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,uncertain,not perfective since the text in not in documentation,possibile_fn
+Microsoft/ChakraCore,db713f083a6606bebcb30a64ddc5cf6c52fb1f6e,[2.0>master] [MERGE #2947 @obastemur] xplat: minor changes,"[2.0>master] [MERGE #2947 @obastemur] xplat: minor changes
+
+Merge pull request #2947 from obastemur:perf222
+
+- do not check QCMoreFreq.. on non mobile platforms
+   Removes redundant check on unrelated platforms.
+
+- use force marshal instead of double condition
+   If scriptContext doesn't match, no point comparing it again.
+",FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,,,possibile_fn
+apache/spark,b176014857b056e45cbc60ac77f1a95bc31cb0fa,[SPARK-22847][CORE] Remove redundant code in AppStatusListener while assigning schedulingPool for stage,"[SPARK-22847][CORE] Remove redundant code in AppStatusListener while assigning schedulingPool for stage
+
+## What changes were proposed in this pull request?
+
+In AppStatusListener's onStageSubmitted(event: SparkListenerStageSubmitted) method, there are duplicate code:
+```
+// schedulingPool was assigned twice with the same code
+stage.schedulingPool = Option(event.properties).flatMap { p =>
+      Option(p.getProperty(""spark.scheduler.pool""))
+    }.getOrElse(SparkUI.DEFAULT_POOL_NAME)
+...
+...
+...
+stage.schedulingPool = Option(event.properties).flatMap { p =>
+      Option(p.getProperty(""spark.scheduler.pool""))
+    }.getOrElse(SparkUI.DEFAULT_POOL_NAME)
+
+```
+But, it does not make any sense to do this and there are no comment to explain for this.
+
+## How was this patch tested?
+N/A
+
+Author: wuyi <ngone_5451@163.com>
+
+Closes #20033 from Ngone51/dev-spark-22847.
+",FALSE,FALSE,TRUE,TRUE,,,TRUE,TRUE,,,,possibile_fn
+google/nomulus,3f7cd00882ef083646ebfaf500a9f5beeda04cc2,Replace FluentIterable with streams,"Replace FluentIterable with streams
+
+-------------
+Created by MOE: https://github.com/google/moe
+MOE_MIGRATED_REVID=180005797
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+facebookexperimental/eden,017347d8d2ec8aa1b76b90bcfea6b3adde5efa23,"obsolescence: add test dor the ""branch replacement"" logic during push, case D4","obsolescence: add test dor the ""branch replacement"" logic during push, case D4
+
+Mercurial checks for the introduction of new heads on push. Evolution comes
+into play to detect if existing branches on the server are being replaced by
+some of the new one we push.
+
+The current code for this logic is very basic (eg: issue4354) and was poorly
+tested. We have a better implementation coming in the evolve extension fixing
+these issues and with more serious tests coverage. In the process of upstreaming
+this improved logic, we start with adding the test case that are already passing
+with the current implementation. Once they are all in, we'll upstream the better
+implementation and the extra test cases.
+
+See inline documentation for details about the test case added in this
+changeset.
+",TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+mantidproject/mantid,9b7f780889badb47948181cb6719313ec096eb97,changes to reduce pylint warnings in system test,"changes to reduce pylint warnings in system test
+
+Refs #6969
+",FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,,,possibile_fn
+pentaho/pentaho-kettle,74731738927553d08d854697a7b98150c32c05ee,[BACKLOG-10294] fix for checkbox position change issue in QAT 313 (#2894),"[BACKLOG-10294] fix for checkbox position change issue in QAT 313 (#2894)
+
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,possibile_fn
+tensorflow/tensorflow,aa734b58be4043b5045e941f315e8d0fd62bd54e,Splits sampling_ops_test.py to pull out the threading-related test. Change: 129229732,"Splits sampling_ops_test.py to pull out the threading-related test.
+Change: 129229732
+",FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,,,possibile_fn
+4dn-dcic/fourfront,eb71a158d137fe308d1a5edfd3eefa0dd172f587,Merge pull request #150 from hms-dbmi/SmallSchemaChanges,"Merge pull request #150 from hms-dbmi/SmallSchemaChanges
+
+SmallSchemaChanges",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+mantidproject/mantid,9a7638287c4613af4de9e45473aa0aeccc549f7b,"refs #26057. Changed to DataProcessorAlgorithm, added progress report","refs #26057. Changed to DataProcessorAlgorithm, added progress report
+
+refs #26057. Added unittests
+
+refs #26057. Added unittests
+
+refs #26057. Added unittests
+
+refs #26057. Insert copywrite text
+
+refs #26057. Fixed doctest failure
+
+refs #26057. Fix failure with python3
+
+refs #26057. Fixed doctest failure
+
+refs #26057. Applied suggestions from code review
+",TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+stephenslab/dsc2,6e7023c86da06caa14ddab803af09ce75fe178f4,Change ashr version requirement,"Change ashr version requirement
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+SCADA-LTS/Scada-LTS,777bc4382e00abedb8b6fb64dbdda4c02cb046c1,"SLTS-127 Correct view hierarchy (show new dialog, change view in new dialog and initial version add folder for view hierarchy).","SLTS-127 Correct view hierarchy (show new dialog, change view in new
+dialog and initial version add folder for view hierarchy).",TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,possibile_fn
+matrix-org/matrix-react-sdk,827b5a6811ac6b9d1f9a3002a94f9f6ac3f1d49c,Fix deviceverifybuttons,"Fix deviceverifybuttons
+
+Use DeviceInfo from deviceVerificationChanged event rather than calling
+non-existent getStoredDevice
+",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,possibile_fn
+lablup/backend.ai-manager,be7c60284ce049cb957ec6859974f723f3efb78b,ci: restore unused_port,"ci: restore unused_port
+
+* It cannot be simply replaced with unused_tcp_port for test auth",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+ampproject/amp-wp,0a78830823b5f3e78183f79212fca4bf39310106,Fix form sanitization and archives widget submission,"Fix form sanitization and archives widget submission
+
+* Supply target=_top to forms to prevent removal.
+* Use AMP.navigateTo(url=event.value) in archives widget instead of submitting form with URL as query param.
+* Replace modify_select filter with simpler force of echo=false, re-using form ID in single method.
+",TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+AVnetWS/Hentoid,20704b48c56ae4072ae81744cfed41b714359c2e,replaced roundabout way to get formatted string,"replaced roundabout way to get formatted string
+
+",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,possibile_fn
+kubernetes-incubator/ocid,8074b538d41d9385d474dc484c6fff71c6056532,Add config live reload feature,"Add config live reload feature
+
+The final configuration path gets now determined by `cmd/crio/main.go`
+and will be passed into the server when executing `server.New()`.
+
+If the config paths exists, CRI-O will automatically register a watcher
+for `SIGHUP`, which partially reloads the configuration when receiving
+that signal. The feature works currently only for the `log_level`
+option.
+
+Signed-off-by: Sascha Grunert <70ab469ddb2ac3e35f32ed7c2fd1cca514b2e879@suse.com>
+",FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+tim-group/tg-eventstore,e9748a286c8deed0c8ef0097d2d4079397e0a840,Autobumper: com.timgroup:Tucker:1.0.1506 -> com.timgroup:Tucker:1.0.1507  * changes to com.timgroup:Tucker:    * Alex Conlin: render values with line-wrapping for long lines,"Autobumper: com.timgroup:Tucker:1.0.1506 -> com.timgroup:Tucker:1.0.1507
+ * changes to com.timgroup:Tucker:
+   * Alex Conlin: render values with line-wrapping for long lines",FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,possibile_fn
+NoraUi/NoraUi,aa7474e835463bc8c4e10823c3100de8ac654233,"fix RGPD issue: change visibility of ""getTextOrKey"" to protected","fix RGPD issue: change visibility of ""getTextOrKey"" to protected",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,possibile_fn
